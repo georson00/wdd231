@@ -59,6 +59,7 @@ main{
 .cards{
     border-radius: 10px;
     box-shadow: 4px 4px 8px gray;
+    padding: 0;
 }
 .cards ul{
     margin: 20px;
@@ -67,6 +68,12 @@ main{
 }
 .cards img{
     padding: 20px;
+}
+.cards h2{
+    display: block;
+    font-size: 20px; 
+    height: 60px; 
+    line-height: 60px; 
 }
 .one{
     font-size: 18px;
