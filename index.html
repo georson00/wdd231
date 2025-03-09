@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1 Assignment: Course Home Page</title>
+    <meta name="description" content="This is an assignment that demonstrates my prerequisite knowledge
+     by applying HTML, CSS, and JavaScript to the design and development a course home page.">
+    <meta name="author" content="Nelson Georges">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/getTemperature.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/toggleMenu.js" defer></script>
+</head>
+<body>
+    <header>
+        
+            <div class="profile">
+                <a href="index.html"><img src="images/myphoto.jpg" alt="Profile picture of Nelson Georges"></a>
+                <h1><a href="index.html">Nelson Georges</a></h1>
+            </div>
+            <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+           
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+
+        </nav>
+    </header> 
+    <h1 id="home-h1"> Home</h1>
+    <main>
+    
+    <section class="cards one">
+        <h2> Course Work</h2>
+        <ul>
+            <li><p>Course Work 1</p></li>
+            <li><p>Course Work 2</p></li>
+            <li><p>Course Work 3</p></li>
+            <li><p>Course Work 4</p></li>
+            <li><p>Course Work 5</p></li>
+        </ul>
+    </section>
+    <section class="cards two">
+        <h2>Leogane, Haiti</h2>
+        <figure>
+            <img src="images/leogane.jpg" alt="" width="400">
+            <figcaption> Plaine de Leogane</figcaption>
+        </figure>
+        
+    </section>
+    <section class="cards three">
+        <h2> Web and Computer Programming Certificate</h2>
+        <ul id="inline-links">
+            <li><a href="#">All</a></li>
+            <li><a href="#">CSE</a></li>
+            <li><a href="#">WDD</a></li>
+        </ul>
+        <hr>
+        <ul id="block-links">
+            <li><a href="#">CSE 110</a></li>
+            <li><a href="#">WDD 130</a></li>
+            <li><a href="#">CSE 111</a></li>
+            <li><a href="#">CSE 210</a></li>
+            <li><a href="#">WDD 131</a></li>
+            <li><a href="#">WDD 231</a></li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+        <p><span id="copyright"></span><span id="currentYear"></span>  ☆ Nelson Georges ☆ Haiti</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    
+</body>
+</html>

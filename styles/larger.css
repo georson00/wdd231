@@ -1,0 +1,113 @@
+@media screen and (min-width: 768px){
+    :root{
+        --primary-color: #82940d; 
+        --secondary-color: #06396c; 
+        --accent-color: #ecbb93;
+        --contrast-color: #FAFAFA;
+      }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 auto;
+    }
+  body{
+    width: 1400px;
+  }
+.menu-icon{
+    display: none;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+}
+header{
+    justify-content: space-between;
+   
+    
+}
+nav{
+   
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    justify-content: center;
+     
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+nav ul li{
+    flex: 1 1 100%;
+    
+    
+}
+nav ul a{
+    font-size: 18px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}
+.cards{
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px gray;
+}
+.cards ul{
+    margin: 20px;
+    padding: 20px;
+    line-height: 35px;
+}
+.cards img{
+    padding: 20px;
+}
+.one{
+    font-size: 18px;
+}
+.three{
+    grid-column: span 2;
+  }
+
+#block-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
