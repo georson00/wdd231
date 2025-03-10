@@ -10,7 +10,9 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 body{
   font-family: "Quicksand", sans-serif;
   font-weight: 100;
@@ -19,9 +21,7 @@ body{
   
 }
 
-img{
-  max-width: 100%;
-}
+
 h1, h2, nav a{
   font-weight: 500;
   font-style: normal;
@@ -131,7 +131,12 @@ nav a:hover{
 }
 .cards img{
   padding: 10px;
-}
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  }
+
 .cards h2{
   background-color: var(--primary-color);
   color: var(--contrast-color);
@@ -148,6 +153,7 @@ nav a:hover{
 }
 .one ul{
   margin: 10px 0 0 40px;
+  max-width: 250px;
 }
 .one ul li{
   padding: 5px;
@@ -159,19 +165,29 @@ figcaption{
 #inline-links{
   display: flex;
   list-style-type: none;
-  justify-content: space-evenly;
+  justify-content:space-around;
   padding: 20px;
+  
+}
+h1 {
+  font-size: 5vw; /* Adjusts based on screen size */
+}
 
+p {
+  font-size: 1rem; /* Scales consistently across devices */
 }
 #inline-links li a{
+  display: block;
   text-decoration: none;
   font-weight: 700;
   color: var(--contrast-color);
   background-color: var(--secondary-color);
-  padding: 10px 50px;
-  margin: 5px;
+  padding: 10px 30px;
+  margin: 10px;
   border-radius: 5px;
-  display: flex;
+  text-align: center;
+ 
+ 
   
 }
 #inline-links li a:hover{
