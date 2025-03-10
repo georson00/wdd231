@@ -18,6 +18,10 @@ body{
   margin: 0 auto;
   
 }
+
+img{
+  max-width: 100%;
+}
 h1, h2, nav a{
   font-weight: 500;
   font-style: normal;
@@ -165,7 +169,9 @@ figcaption{
   color: var(--contrast-color);
   background-color: var(--secondary-color);
   padding: 10px 50px;
+  margin: 5px;
   border-radius: 5px;
+  display: flex;
   
 }
 #inline-links li a:hover{
