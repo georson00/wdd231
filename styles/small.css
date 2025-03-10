@@ -53,7 +53,6 @@ header a{
   
 }
 .profile img{
-width: 100px;
 border-radius: 50%;
 margin: 10px 0 0 0 ;
 border: 3px solid var(--secondary-color);
@@ -169,13 +168,7 @@ figcaption{
   padding: 20px;
   
 }
-h1 {
-  font-size: 5vw; /* Adjusts based on screen size */
-}
 
-p {
-  font-size: 1rem; /* Scales consistently across devices */
-}
 #inline-links li a{
   display: block;
   text-decoration: none;
