@@ -33,8 +33,10 @@ header{
   box-shadow: 0 0 30px #333;  
    
 }
-header h1{
+#profile-name{
   padding: 10px;
+  font-weight: 700;
+  font-size: 25px;
   
   
 }
@@ -44,8 +46,7 @@ header a{
  margin: 0 0 10px 0;
  
 }
-
-#home-h1{
+h1{
   margin: 25px 0 0 25px;
 }
 .profile{
