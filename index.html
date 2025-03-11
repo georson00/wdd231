@@ -8,11 +8,15 @@
     <meta name="description" content="This is an assignment that demonstrates my prerequisite knowledge
      by applying HTML, CSS, and JavaScript to the design and development a course home page.">
     <meta name="author" content="Nelson Georges">
+    <link rel="preload" href="/styles/larger.css" as="style">
+    <link rel="preload" href="/styles/small.css" as="style">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap">
+</noscript>
+
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/toggleMenu.js" defer></script>
 </head>
@@ -21,7 +25,7 @@
     <header>
 
         <div class="profile">
-            <a href="index.html"><img src="images/myprofile.jpg" alt="Profile picture of Nelson Georges" width="100"></a>
+            <a href="index.html"><img src="images/nelson.jpg" alt="Profile picture of Nelson Georges" width="100" height="auto"></a>
             <h1><a href="index.html">Nelson Georges</a></h1>
         </div>
         <!-- Hamburger Menu Icon -->
