@@ -56,8 +56,8 @@ main{
     grid-gap: 20px;
     padding: 40px;
 }
-#home-h1{
-    grid-column:span 2 ;
+main h1{
+    grid-column: span 2;
 }
 .cards{
     border-radius: 10px;
