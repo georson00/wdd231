@@ -208,6 +208,8 @@ margin: 5px 0;
   padding: 10px;
   display: block;
   border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.5s ease-in-out;
 
 }
 
