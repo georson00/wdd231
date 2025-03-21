@@ -127,6 +127,10 @@ nav.active{
 nav a:hover{
   text-decoration: underline;
 }
+nav a.active{
+  color: var(--accent-color);
+  font-weight: bold;
+}
 .cards{
   padding: 20px;
   text-align: center;
