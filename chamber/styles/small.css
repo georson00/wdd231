@@ -246,10 +246,23 @@
   footer{
     background-color: var(--secondary-color);
     text-align: center;
-    color: var(--contrast-color);
-    font-weight: 400;
+    color: var(--primary-color);
+    font-weight: 500;
     padding: 10px;
   }
+  #bold {
+    font-weight: bold;
+  }
   #lastModified{
-    color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  .social-media-icon{
+    text-decoration: none;
+    
+  }
+  .social-media-icon img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    
   }
