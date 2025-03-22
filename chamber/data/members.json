@@ -11,7 +11,7 @@
     },
     {
         "name": "Atlas Tires Auto Parts",
-        "address": "Route Nationale #2, Léogâne, Haiti",
+        "address": "Guerin, Route Nationale #2, Léogâne, Haiti",
         "phone": "+509 31 45 6789",
         "email": "info@atlastires.com",
         "website": "https://leoganeautoparts.com",
@@ -30,11 +30,11 @@
         "industry": "Technology"
     },
     {
-        "name": "Tropical Café",
-        "address": "Downtown Léogâne, Haiti",
+        "name": "Kalove Restaurant",
+        "address": "54 Route de Darbonne Léogâne, Haiti",
         "phone": "+509 22 55 6789",
-        "email": "info@tropicalcafe.com",
-        "website": "https://tropicalcafe.com",
+        "email": "info@kaloverestaurent.com",
+        "website": "https://kaloverestaurent.com",
         "image": "https://example.com/tropical-cafe.jpg",
         "membershipType": "bronze",
         "industry": "Food & Beverage"
