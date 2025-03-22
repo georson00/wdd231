@@ -22,6 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/toggleMenu.js" defer></script>
+    <script src="scripts/darkmodeToggle.js" defer></script>
+    <scripts src="getWeatherData.js" defer></scripts>
+    <script src="scripts/getCompaniesData.js" defer></script>
     <link rel="icon" sizes="16x16" type="image/png" href="favicon-16x16.png">
     <link rel="icon" sizes="32x32" type="image/png" href="favicon-32x32.png">
     <link rel="icon" sizes="48x48" type="image/png" href="favicon-48x48.png">
@@ -34,14 +37,17 @@
     <header>
 
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Leogane Chamber of Commerce" width="100" height="100"></a>
-            <div id="site-title">
-                <p><a href="index.html">Léogâne</a></p>
-                <p>Chamber of Commerce</p>
-            </div>
-            
-            
+            <a href="index.html"><img src="images/logo.png" alt="Leogane Chamber of Commerce" width="100" height="100">
+            </a>
         </div>
+        <div class="site-title">
+            <p><a href="index.html">Léogâne</a></p>
+            <p>Chamber of Commerce</p>
+        </div>
+         
+        <div class="dark-mode-icon-container"><a id="darkModeToggle"><img src="images/dark-mode-icon.png" alt="Dark Mode Icon" width="60"></a>
+        </div>  
+         
         <!-- Hamburger Menu Icon -->
         <div class="menu-icon" onclick="toggleMenu()">
             <span class="bar"></span>
@@ -59,15 +65,19 @@
             </ul>
 
         </nav>
-    <main>
-        <section>
-            <h1>Home</h1>
+    <main class="cards-container">
+        <h1>Home</h1>
+        <section class="event-card">
             <h2>Events</h2>
-            <img>
+            <p>Cultural Conference at Arawak Hotel</p>
+            <p>July 8<sup>th</sup>, 2026</p>
+            <img src="images/Arawak-Hotel.jpg" alt="Arawak Hotel" width="400" height="200">
+            <p>Join us for a cultural conference at the Arawak Hotel. The event will feature guest speakers, workshops, and networking opportunities.</p>
         </section>
-        <section>
+        <section class="weather-container">
             <h2>Current Weather</h2>
-
+            <div id="weatherResult">Loading weather...</div>
+        
         </section>
         <section>
             <h2>Weather Forcast</h2>
@@ -76,29 +86,18 @@
             <p>Thursday: <span></span></p>
         </section>
         <section>
-            <h2>Arawak Hotel</h2>
-            <p>Business Tag Line</p>
-            <hr>
-            <img>
-            <p>EMAIL: info@gmail.com</p>
-            <p> PHONE: 509-3450-5687 </p>
-            <p> URL: mybusiness.com</p>
+            <h2>Businesses</h2>
+            <p>Explore the directory of local companies in Léogâne.</p>
+            <div id="companiesContainer"></div>
         </section>
-        <section>
-            <h2>Business Name</h2>
-            <p>Business Tag Line</p>
-            <hr>
-            <img>
-            <p>EMAIL: info@gmail.com</p>
-            <p> PHONE: 509-3450-5687 </p>
-            <p> URL: mybusiness.com</p>
-        </section>
+        
     </main>
     <footer>
         <p><span id="bold">Léogâne Chamber of Commerce</span> <br>
         264 Route de Darbonne <br> 
         Léogâne, Ouest, Haiti <br>
         info@leoganecc.org <br><br>
+        
         <a class="social-media-icon" href="https://www.facebook.com/profile.php?id=100088767862583" target="_blank">
             <img src="images/facebook.icon.png" alt="Facebook Icon">
         </a>
@@ -110,7 +109,7 @@
         </a> <br><br>
         WDD231 Class Project<br>
         Nelson Georges</p>
-        <p>&copy; 2025 Léogâne Chamber of Commerce</p>
+        <p><span id="copyright"></span><span id="currentYear"></span> Léogâne Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
 </body>
