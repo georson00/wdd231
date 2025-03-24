@@ -4,7 +4,7 @@ const weatherResult = document.getElementById("weatherResult");
 
 function formatTime(timestamp){
     const date = new Date(timestamp * 1000);
-    return date.toLocaleTimeString("en-Us", {
+    return date.toLocaleTimeString("en-US", {
         hour: "2-digit",
         minute: "2-digit",
         hour12: true
@@ -20,16 +20,18 @@ function fetchWeatherData(){
         })
         .then(data =>{
             const temp = Math.round(data.main.temp);
-            const high = Math.round(data.main.tem_max);
+            const high = Math.round(data.main.temp_max);
             const low = Math.round(data.main.temp_min);
             const humidity = data.main.humidity;
-            const weatherDesc =data.weather[0].descriptuon;
-            const sunrise = formatTime(data.sys.sunset);
-            const sunset = formatTime(data.sys.sunrise);
-
+            const weatherDesc =data.weather[0].description;
+            const sunrise = formatTime(data.sys.sunrise);
+            const sunset = formatTime(data.sys.sunset);
+            const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+           
             weatherResult.innerHTML = `
-            <p>${city}: ${temp}F, ${weatherDesc.chartAt(0).toUpperCase() + weatherDesc.slice(1)}</p>
-            <p>High: ${high}F, Low: ${low} $F</p>
+            <img src="${iconUrl}" alt="Weather Icon">
+            <p><strong>${city}:</strong> ${temp}°F, ${weatherDesc.charAt(0).toUpperCase() + weatherDesc.slice(1)}</p>
+            <p>High: ${high}°F, Low: ${low}°F</p>
             <p>Humidity: ${humidity}%</p>
             <p>Sunrise: ${sunrise}</p>  
             <p>Sunset: ${sunset}</p>
@@ -45,4 +47,4 @@ function fetchWeatherData(){
                 });
             }
              
-            fetchWeatherData();
+fetchWeatherData();
