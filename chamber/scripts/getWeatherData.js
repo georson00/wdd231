@@ -46,5 +46,43 @@ function fetchWeatherData(){
                 
                 });
             }
+function fetchForecastData(){
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}&units=imperial`)
+    .then(response => response.json())
+    .then(data =>{
+        const dailyForecast = {};
+
+        data.list.forEach(item =>{
+            const date = new Date(item.dt * 1000).toLocaleString("en-US", { weekday: "long"});
+            if (!dailyForecast[date]){
+                dailyForecast[date] = {
+                    temp: Math.round(item.main.temp),
+                    icon: item.weather[0].icon,
+                    desc: item.weather[0].description
+                };
+            }
+        });
+        const forecastDays = Object.keys(dailyForecast).slice(0, 3);
+
+        forecastResult.innerHTML = forecastDays.map(day =>{
+            const forecast = dailyForecast[day];
+            return `
+            <div class="forcast-card">
+            <h4>${day}</h4>
+            <img src="https://openweathermap.org/img/wn/${forecast.icon}@2x.png" alt="Weather Icon">
+            <p class="temperature">${forecast.temp}°F</p>
+            <p>${forecast.desc.charAt(0).toUpperCase() + forecast.desc.slice(1)}</p>
+            </div>
+            `;
+        }).join("");
+    })
+    .catch(error =>{
+        forecastResult.textContent = `Error: ${error.message}`;
+        console.error(error);
+    });
+
+
+}
              
 fetchWeatherData();
+fetchForecastData();
