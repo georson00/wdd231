@@ -1,8 +1,8 @@
 :root{
     --primary-color: #0b0f5f; 
-    --secondary-color: #fd5858; 
-    --accent-color: #F5F5DC;
-    --contrast-color: white;
+    --secondary-color: #b5fd58; 
+    --accent-color: #00f0ff;
+    --contrast-color: #ffffff;
   }
   
   *{
@@ -98,7 +98,7 @@
    color: var(--secondary-color);
    margin: 0 0 10px 0;
   }
-  h1{
+  h1, #business-h2{
     margin: 25px 0 0 25px;
   
   }
@@ -107,78 +107,50 @@
     align-items: center;
     
   }
+ nav{
+  background-color: var(--secondary-color);
+  
+ }
  
-  .menu-icon{
-    display: flex;
-    flex-direction: column;
-    cursor:pointer;
-    padding: 10px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index:1000;
-  }
-  .bar{
-    background-color: var(--secondary-color);
-    height:4px;
-    width: 30px;
-    margin: 5px 0;
-    transition: 0.4s;
-  }
-  nav{
-    display: none;
-   
-  
-  }
-  
-  nav ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  nav ul li{
-    padding:15px;
-    text-align: center;
-  }
-  
-  nav ul li a{
-    text-decoration: none;
-    color: var(--contrast-color);
-    display: block;
-  }
-  
-  
-  nav.active{
-    display:block;
-    text-align: center;
-    background-color: var(--secondary-color);
-    width: 100%;
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    }
-  
-  .menu-icon.open .bar:nth-child(1){
-    transform:  translateY(6px)rotate(45deg);
-  }
-  
-  .menu-icon.open .bar:nth-child(2){
-    transform:  translateY(-7px)rotate(-45deg);
-  }
-  .menu-icon.open .bar:nth-child(3){
-    opacity:0;
-  }
-  
-  
-  
-  nav a:hover{
-    text-decoration: underline;
-  }
+#menu-button{
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color:#000;
+  cursor: pointer;
+  padding: .25rem 2vw;
+  width: 100%;
+  text-align: right;
+}
+ul.menu-links li a{
+  display: block;
+  padding: .75rem 2vw;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+#menu-button.open::before{
+  content:"X";
+}
+li.current-menu-item a{
+  background-color: rgba(0,0,0,0.2);
+}
+ul.menu-links{
+  display: none;
+  list-style-type: none;
+}
+
+ul.menu-links a:hover{
+  text-decoration: underline;
+} 
+ul.menu-links.open{
+  display: block;
+}
+
+
+
   .cards-container{
     max-width: 90%;
     margin: auto;
-    background-color: var(--contrast-color);
-    border-radius: 10px;
     padding: 15px;
     
   }
@@ -194,11 +166,10 @@
     margin: 0 auto;
     }
   
-  .cards-container h2{
+  .event-card h2{
     background-color: var(--primary-color);
     color: var(--contrast-color);
     text-align: center;
-    border-radius: 10px 10px 0 0;
     border-bottom: none;
     font-size: 20px;
     height: 50px;
@@ -207,9 +178,8 @@
   }
   .event-card{
 
-    background-color: var(--accent-color);
+    
     color: var(--contrast-color);
-    border-radius: 10px;
     margin: 15px 0;
     padding: 0 0 10px 0;
     box-shadow: 0 0 10px #333;
@@ -237,7 +207,6 @@
   .weather-container, .forecast-container{
     background-color: var(--primary-color);
     color: var(--contrast-color);
-    border-radius: 10px;
     padding: 0 0 10px 0;
     margin: 20px 0;
     box-shadow: 0 0 10px #333;
@@ -251,7 +220,6 @@
     background-color: var(--accent-color);
     color: var(--primary-color);
     text-align: center;
-    border-radius: 10px 10px 0 0;
     border-bottom: none;
     font-size: 20px;
     height: 50px;
@@ -289,40 +257,41 @@
 
 
 
-
 .company-card{
   border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  padding: 20px;  
+  padding: 20px;
+  height: 420px;  
   margin: 20px 0;
-  background-color: var(--accent-color);
   color: var(--primary-color);  
   box-shadow: 0 0 10px #333;
   transition: all 0.5s ease-out;
   text-align: center;
+  
 
 }
 .company-card a{
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 600;
-  background-color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 3px;
   transition: all 0.3s ease-out;
-  ;
+  
 }
 .company-card a:hover{
-  color: var(--secondary-color);
+  text-decoration: underline;
 }
+
 .company-card p{
-  margin: 15px;
+ 
   text-align: center;
   color: var(--primary-color);
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.5rem;
+  font-size: 16px;
   
 }
+.company-card h2
 .company-card:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px #333;
@@ -337,22 +306,6 @@
 .member{
   color: blue;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   figcaption{

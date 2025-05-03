@@ -79,8 +79,15 @@ border: 3px solid var(--secondary-color);
   transition: 0.4s;
 }
 nav{
-  display: none;
- 
+  max-height: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
 
 }
 
@@ -102,13 +109,11 @@ nav ul li a{
 
 
 nav.active{
-  display:block;
-  text-align: center;
-  background-color: var(--secondary-color);
-  width: 100%;
+  max-height: 500px;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
+  
   }
 
 .menu-icon.open .bar:nth-child(1){

@@ -9,6 +9,7 @@
     <meta property="og:image" content="https://static.wikia.nocookie.net/haiti/images/a/a2/Leo4.jpg/revision/latest?cb=20171120021253">  
     <meta property="og:url" content="directory.html">
     <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preload" href="/styles/larger.css" as="style">
     <link rel="preload" href="/styles/small.css" as="style">
     <link rel="stylesheet" href="styles/small.css">
@@ -20,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/activeNav.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/toggleMenu.js" defer></script>
     <script src="scripts/darkmodeToggle.js" defer></script>
@@ -47,26 +49,22 @@
          
         <div class="dark-mode-icon-container"><a id="darkModeToggle"><img src="images/dark-mode-icon.png" alt="Dark Mode Icon" width="60"></a>
         </div>  
-         
-        <!-- Hamburger Menu Icon -->
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+     
     </header>
 
-        <nav id="nav-menu">
-            <ul>
+        <nav>
+            <button id="menu-button" onclick="toggleMenu()">&#9776;</button>
+            <ul class="menu-links">
                 <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="#">Chamber</a></li>
+                <li class="current-menu-item"><a href="#">Chamber</a></li>
                 <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
             </ul>
 
         </nav>
-    <main class="cards-container">
+    <main >
         <h1>Home</h1>
+        <div class="cards-container">
         <section class="event-card">
             <h2>Events</h2>
             <p>Cultural Conference at Arawak Hotel this July 8<sup>th</sup>, 2026</p>
@@ -82,11 +80,12 @@
             <h2>Weather Forcast</h2>
             <div id="forecastResult">Loading forecast...</div>
         </section>
-        <section>
-            <h2>Businesses</h2>
-            <p>Explore the directory of local companies in Léogâne.</p>
+        </div>
+        <section >
+            <h2 id="business-h2">Businesses</h2>
             <div id="companiesContainer"></div>
         </section>
+        
         
     </main>
     <footer>
