@@ -1,9 +1,7 @@
-// JavaScript to toggle the menu and change the hamburger to an "X"
-function toggleMenu() {
-    const menuIcon = document.querySelector('.menu-icon');
-    const navMenu = document.getElementById('nav-menu');
-    
-    // Toggle the 'open' class on both the menu and the hamburger icon
-    menuIcon.classList.toggle('open');
-    navMenu.classList.toggle('open');
-}
+const hamburgerMenu = document.querySelector('#menuButton');
+const navElement = document.querySelector('#navbar');
+
+hamburgerMenu.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerMenu.classList.toggle('open');
+});

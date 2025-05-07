@@ -31,7 +31,8 @@ header{
   background-color:  var(--primary-color);
   color: var(--contrast-color);
   box-shadow: 0 0 30px #333;  
-   
+  justify-items: center;
+  align-items: center;
 }
 #profile-name{
   padding: 10px;
@@ -50,33 +51,29 @@ h1{
   margin: 25px 0 0 25px;
 
 }
-.profile{
-  justify-items: center;
-  align-items: center;
+
   
-}
-.profile img{
+header img{
 border-radius: 50%;
 margin: 10px 0 0 0 ;
 border: 3px solid var(--secondary-color);
 
 }
-.menu-icon{
-  display: flex;
-  flex-direction: column;
-  cursor:pointer;
-  padding: 10px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index:1000;
+#menuButton::before{
+  content:"\2630";
 }
-.bar{
-  background-color: var(--secondary-color);
-  height:4px;
-  width: 30px;
-  margin: 5px 0;
-  transition: 0.4s;
+
+#menuButton{
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color:var(--secondary-color);
+  cursor: pointer;
+  padding: .25rem 2vw;
+  width: 100%;
+  text-align: right;
+  position:absolute;
+  top: 10px
 }
 nav {
   max-height: 0;
@@ -103,39 +100,32 @@ nav ul li{
   text-align: center;
   
 }
+ul.menuLinks li a{
 
-nav ul li a{
-  text-decoration: none;
-  color: var(--contrast-color);
   display: block;
-  padding: 10px 0;
+  padding: .75rem 2vw;
+  color: #fff;
+  text-decoration: none;
+  
 }
+
 
 li.current-menu-item a{
   background-color: rgba(0,0,0,0.2);
 }
 nav.open{
+  
   max-height: 500px;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
   }
 
-.menu-icon.open .bar:nth-child(1){
-  transform:  translateY(6px)rotate(45deg);
-}
-
-.menu-icon.open .bar:nth-child(2){
-  transform:  translateY(-7px)rotate(-45deg);
-}
-.menu-icon.open .bar:nth-child(3){
-  opacity:0;
-}
 
 
-
-nav a:hover{
-  text-decoration: underline;
+ul.menuLinks a:hover{
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
 nav a.open{
   color: var(--accent-color);
