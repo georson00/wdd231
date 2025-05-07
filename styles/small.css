@@ -1,7 +1,7 @@
 :root{
-  --primary-color: #cade46; 
-  --secondary-color: #06396c; 
-  --accent-color: #ecbb93;
+  --primary-color: #5dde46; 
+  --secondary-color: #2924b7; 
+  --accent-color: orange;
   --contrast-color: white;
 }
 
@@ -28,6 +28,9 @@ h1, h2, nav a{
 
 }
 header{
+  display: grid;
+  grid-template-columns: 1fr auto .5fr;
+  gap: 2px;
   background-color:  var(--primary-color);
   color: var(--contrast-color);
   box-shadow: 0 0 30px #333;  
@@ -71,9 +74,7 @@ border: 3px solid var(--secondary-color);
   cursor: pointer;
   padding: .25rem 2vw;
   width: 100%;
-  text-align: right;
-  position:absolute;
-  top: 10px
+  margin-top: -65px;
 }
 nav {
   max-height: 0;
@@ -88,7 +89,7 @@ nav {
 
 }
 li.current-menu-item a{
-  background-color: rgba(0,0,0,0.2);
+  color: var(--accent-color)
 }
 nav ul{
   list-style-type: none;
@@ -110,8 +111,9 @@ ul.menuLinks li a{
 }
 
 
-li.current-menu-item a{
-  background-color: rgba(0,0,0,0.2);
+.current-menu-item a{
+  background: rgb(0,0,0,0.2);
+  font-weight: bold;
 }
 nav.open{
   

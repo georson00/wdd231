@@ -4,7 +4,9 @@
 #menuButton{
     display: none;
 }
-
+header{
+    display: block;
+}
 .profile{
     display: flex;
     justify-content: center;
