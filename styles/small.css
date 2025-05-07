@@ -64,8 +64,15 @@ border: 3px solid var(--secondary-color);
 }
 #menuButton::before{
   content:"\2630";
+  
 }
-
+#menuButton.open{
+  transform: rotate(360deg);
+}
+#menuButton.open::before{
+  content:"X";
+  
+}
 #menuButton{
   font-size: 2rem;
   background: none;
@@ -75,6 +82,7 @@ border: 3px solid var(--secondary-color);
   padding: .25rem 2vw;
   width: 100%;
   margin-top: -65px;
+  transition: transform 0.3s ease;
 }
 nav {
   max-height: 0;
