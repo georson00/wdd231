@@ -1,18 +1,6 @@
-@media screen and (min-width: 768px){
-    :root{
-        --primary-color: #cade46; 
-        --secondary-color: #06396c; 
-        --accent-color: #ecbb93;
-        --contrast-color: #FAFAFA;
-      }
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-  body{
-    width: 1400px;
-  }
+@media (min-width: 760px){
+
+
 .menu-icon{
     display: none;
 }
@@ -21,25 +9,23 @@
     display: flex;
     justify-content: center;
 }
-header{
-    justify-content: space-between;
-   
-    
-}
+
 nav{
    
-    display: flex;
-    flex-direction: column;
-    background-color: var(--secondary-color);
-    justify-content: center;
-     
+    
+    max-height: 500px;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+        
+
+
 }
 nav ul {
     display: flex;
-    justify-content: center;
-
-    
-    
+    align-items: center;
+    height: 100%;
+   
 }
 nav ul li{
     flex: 1 1 100%;

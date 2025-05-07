@@ -5,5 +5,5 @@ function toggleMenu() {
     
     // Toggle the 'open' class on both the menu and the hamburger icon
     menuIcon.classList.toggle('open');
-    navMenu.classList.toggle('active');
+    navMenu.classList.toggle('open');
 }
