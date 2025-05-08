@@ -77,9 +77,9 @@ const courses = [
         completed: false
     }
 ]
-
 const courseContainer = document.querySelector('.course-container')
 const totalCredits = document.getElementById('totalCredits')
+
 
 document.getElementById("btnAll").addEventListener("click",() => renderCourses(courses));
 document.getElementById('btnWDD').addEventListener("click", () => {
@@ -96,10 +96,17 @@ function renderCourses(courses) {
     courses.forEach(course => {
         const card = document.createElement("div");
         card.className = `course-card ${course.completed ? "completed" : "not-completed"}`;
-
+        
+       
+        if (course.completed) {
+            courseStatus = "Completed";
+        } else{
+            courseStatus = "Not Completed";
+        }
         card.innerHTML = `
             <p>${course.subject} ${course.number}</p>
             <p>Credits: ${course.credits}</p>
+            <p id="course-status-p>${courseStatus}</p>
             
             
 

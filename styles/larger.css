@@ -87,11 +87,7 @@ main h1{
 }
 
 }
-.course-card:hover{
-    color: var(--contrast-color);
-    transition: all 0.3s ease-in-out;
 
-}
 
 
 
