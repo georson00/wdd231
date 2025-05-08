@@ -134,7 +134,7 @@ nav.open{
 
 
 ul.menuLinks a:hover{
-  color: var(--primary-color);
+  color: var(--accent-color);
   transition: all 0.3s ease-in-out;
 }
 nav a.open{
