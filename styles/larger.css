@@ -80,26 +80,17 @@ main h1{
     padding: 16px;
 }
 
-
-
-
-.course-container .course-card{
-    padding: 10px 60px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px gray;
-    text-align: center;
+.course-card{
+    padding: 16px;
     width: 100%;
-    
-
-
-
-
-
-
-
 }
 
+}
+.course-card:hover{
+    color: var(--contrast-color);
+    transition: all 0.3s ease-in-out;
 
+}
 
 
 
