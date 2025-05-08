@@ -40,7 +40,7 @@ nav ul a{
 
 main{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr auto;
     grid-gap: 20px;
     padding: 40px;
 }
@@ -73,16 +73,23 @@ main h1{
     grid-column: span 2;
   }
 
-#block-links{
+.course-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
+    padding: 16px;
 }
 
 
 
 
-
+.course-container .course-card{
+    padding: 10px 60px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px gray;
+    text-align: center;
+    width: 100%;
+    
 
 
 

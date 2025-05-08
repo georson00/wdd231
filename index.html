@@ -25,6 +25,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/toggle-menu.js" defer></script>
     <script src="scripts/active-nav.js" defer></script>
+    <script src="scripts/course-array.js" defer></script>
 </head>
 
 <body>
@@ -36,14 +37,14 @@
     <nav id="navbar">
         <ul class="menuLinks">
             <li class="current-menu-item"><a href="index.html" id="home">Home</a></li>
-            <li><a  href="#">Chamber</a></li>
+            <li><a  href="https://georson00.github.io/wdd231/chamber/directory.html">Chamber</a></li>
             <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
             <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
         </ul>
 
     </nav>
     <main>
-        <h1>W1 Assignment: Course Home Page</h1>
+        <h1>Home</h1>
         <section class="cards one">
             <h2> Course Work</h2>
             <ul>
@@ -73,22 +74,18 @@
 
         </section>
         <section class="cards three">
-            <h2> Web and Computer Programming Certificate</h2>
-            <ul id="inline-links">
-                <li><a href="#">All</a></li>
-                <li><a href="#">CSE</a></li>
-                <li><a href="#">WDD</a></li>
-            </ul>
-            <hr>
-            <ul id="block-links">
-                <li><a href="#">CSE 110</a></li>
-                <li><a href="#">WDD 130</a></li>
-                <li><a href="#">CSE 111</a></li>
-                <li><a href="#">CSE 210</a></li>
-                <li><a href="#">WDD 131</a></li>
-                <li><a href="#">WDD 231</a></li>
-            </ul>
+        <h2> Web and Computer Programming Certificate</h2>
+            <div class="buttons">
+                
+                <button id="btnAll" class="course-button">ALL</button>
+                <button id="btnWDD" class="course-button">WDD</button>
+                <button id="btnCSE" class="course-button">CSE</button>
+        </div>
+        
+        <div class="course-container"></div>
+        <div id="totalCredits"></div>
         </section>
+
     </main>
     <footer>
         <p><span id="copyright"></span><span id="currentYear"></span> ☆ Nelson Georges ☆ Haiti <span><img
