@@ -1,10 +1,10 @@
-:root{
-    --primary-color: #a91c7a; 
-    --secondary-color: #06396c; 
-    --accent-color: #ecbb93;
+
+  :root{
+    --primary-color: #5dde46; 
+    --secondary-color: #161270; 
+    --accent-color: orange;
     --contrast-color: white;
   }
-  
   *{
       box-sizing: border-box;
       margin: 0;
