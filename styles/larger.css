@@ -13,14 +13,11 @@ header{
 }
 
 nav{
-   
     
     max-height: 500px;
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
-        
-
 
 }
 nav ul {

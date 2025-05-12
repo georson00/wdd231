@@ -38,7 +38,7 @@ function displayCompanies(companies){
     card.innerHTML = `
     <h3 class="${membershipType}">${company.name}</h3>
     <p>${company.address}</p>
-    <hr>
+    
     <img src="${company.image}" alt="${company.name} Logo" width="400" height="200" class="company-logo" object-fit="cover">
     <p>Phone: ${company.phone}</p>
     <p>Email: ${company.email}</p>

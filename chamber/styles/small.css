@@ -1,10 +1,10 @@
-:root{
-    --primary-color: #0b0f5f; 
-    --secondary-color: #b5fd58; 
-    --accent-color: #00f0ff;
-    --contrast-color: #ffffff;
+
+  :root{
+    --primary-color: #5dde46; 
+    --secondary-color: #161270; 
+    --accent-color: orange;
+    --contrast-color: white;
   }
-  
   *{
       box-sizing: border-box;
       margin: 0;
@@ -21,8 +21,12 @@
     background: #333;
   }
   #darkModeToggle{
+ grid-column: 3;
+ position: absolute;
+ right: 30px;
+ bottom: 5px;
+ border: none;
 
-    border: none;
   }
   body{
     font-family: "Quicksand", sans-serif;
@@ -39,14 +43,10 @@
   
   }
   header{
-    
+    display: grid;
     background-color:  var(--primary-color);
     color: var(--contrast-color);
     box-shadow: 0 0 30px #333;  
-     
-  }
-  header{
-    display: grid;
     grid-template-columns: 1fr auto auto 1fr;
     align-items: center;
     padding: 10px 20px;
@@ -55,17 +55,15 @@
     
   }
   .logo img{
-    border-radius: 15%;
+    border-radius: 50%;
     margin: 10px 0 0 0 ;
     border: 3px solid var(--secondary-color);
     
     
   }
  
- 
   .logo{
     grid-column: 1;
-  
 }
 .site-title{
   grid-column: 2;
@@ -75,24 +73,22 @@
 }
 .site-title p a{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 35px;
     
   }
 
-.dark-mode-icon-container{
-  grid-column: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.site-title span{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--contrast-color);
 }
-.dark-mode-icon-container img{
+#darkModeToggle img{
+  border-radius: 35px;
   width: 30px;
   height: 30px;
-  margin: 0 10px; 
-  border-radius: 20px;
-
+  cursor: pointer;
 }
+
   header a{
    text-decoration: none;
    color: var(--secondary-color);
@@ -107,43 +103,89 @@
     align-items: center;
     
   }
- nav{
-  background-color: var(--secondary-color);
-  
- }
+
  
-#menu-button{
+#menuButton::before{
+  content:"\2630";
+  
+}
+#menuButton.open{
+  transform: rotate(360deg);
+}
+#menuButton.open::before{
+  content:"X";
+  
+}
+#menuButton{
   font-size: 2rem;
   background: none;
   border: none;
-  color:#000;
+  color:var(--secondary-color);
   cursor: pointer;
   padding: .25rem 2vw;
   width: 100%;
-  text-align: right;
+  margin-top: -65px;
+  transition: transform 0.4s ease-out;
+  position:absolute;
+  right: -200px;
+
 }
-ul.menu-links li a{
-  display: block;
-  padding: .75rem 2vw;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-#menu-button.open::before{
-  content:"X";
+nav {
+  max-height: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
+
 }
 li.current-menu-item a{
-  background-color: rgba(0,0,0,0.2);
+  color: var(--accent-color)
 }
-ul.menu-links{
-  display: none;
+nav ul{
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li{
+  
+  text-align: center;
+  
+}
+ul.menuLinks li a{
+
+  display: block;
+  padding: .75rem 2vw;
+  color: #fff;
+  text-decoration: none;
+  
 }
 
-ul.menu-links a:hover{
-  text-decoration: underline;
-} 
-ul.menu-links.open{
-  display: block;
+
+.current-menu-item a{
+  background: rgb(0,0,0,0.2);
+  font-weight: bold;
+}
+nav.open{
+  
+  max-height: 500px;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  }
+
+
+
+ul.menuLinks a:hover{
+  color: var(--accent-color);
+  transition: all 0.3s ease-in-out;
+}
+nav a.open{
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 
@@ -177,8 +219,6 @@ ul.menu-links.open{
     
   }
   .event-card{
-
-    
     color: var(--contrast-color);
     margin: 15px 0;
     padding: 0 0 10px 0;
@@ -204,7 +244,7 @@ ul.menu-links.open{
     margin: 0 auto;
   
   }
-  .weather-container, .forecast-container{
+  .weather-card, .forecast-container{
     background-color: var(--primary-color);
     color: var(--contrast-color);
     padding: 0 0 10px 0;
@@ -212,12 +252,12 @@ ul.menu-links.open{
     box-shadow: 0 0 10px #333;
     transition: all 0.5s ease-out;
   }
-  .weather-container:hover{
+  .weather-card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px #333;
   }
-  .weather-container h2, .forecast-container h2{
-    background-color: var(--accent-color);
+  .weather-card h2, .forecast-container h2{
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
     border-bottom: none;
@@ -225,16 +265,16 @@ ul.menu-links.open{
     height: 50px;
     line-height: 50px;
   }
-  .weather-container img{
+  .weather-card img{
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
   
   }
-  .weather-container p{
+  .weather-card p{
     text-align: center;
-    color: var(--accent-color);
+    color: var(--contrast-color);
     line-height: 2rem;
   }
 #weatherResult{
@@ -249,28 +289,35 @@ ul.menu-links.open{
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
+#companiesContainer{
+    max-width: 90%;
+    margin: auto;
+    padding:15px;
+    text-align: center;
+    
+}
+#companiesContainer img{
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
 .company-card{
-  border: 1px solid var(--primary-color);
-  padding: 20px;
-  height: 420px;  
-  margin: 20px 0;
-  color: var(--primary-color);  
-  box-shadow: 0 0 10px #333;
-  transition: all 0.5s ease-out;
-  text-align: center;
-  
+    color: var(--contrast-color);
+    margin: 15px 0;
+    padding: 30px 10px; 
+    box-shadow: 0 0 10px #333;
+    transition: all 0.5s ease-out;
 
+}
+.company-card h3{
+  color: var(--secondary-color);
+  padding: 10px;
 }
 .company-card a{
   text-decoration: none;
+  background-color: var(--secondary-color);
   color: var(--accent-color);
   font-weight: 600;
   padding: 10px 20px;
@@ -286,12 +333,13 @@ ul.menu-links.open{
  
   text-align: center;
   color: var(--primary-color);
-  font-weight: 400;
-  line-height: 1.5rem;
+  font-weight: 450;
+  line-height: 1rem;
   font-size: 16px;
+  margin: 20px 0;
   
 }
-.company-card h2
+
 .company-card:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px #333;
@@ -308,68 +356,6 @@ ul.menu-links.open{
 }
 
 
-  figcaption{
-    font-style: italic;
-    font-family:'Courier New', Courier, monospace;
-  }
-  #inline-links{
-    display: flex;
-    list-style-type: none;
-    justify-content:space-around;
-    padding: 20px;
-    
-  }
-  
-  #inline-links li a{
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--contrast-color);
-    background-color: var(--secondary-color);
-    padding: 10px 30px;
-    margin: 10px;
-    border-radius: 5px;
-    text-align: center;
-   
-   
-    
-  }
-  #inline-links li a:hover{
-    color: var(--accent-color);
-  }
-  
-  
-  #block-links{
-    display: block;
-    list-style-type: none;
-    padding:0;
-    
-  }
-  #block-links li {
-  margin: 5px 0;
-  }
-  
-  #block-links a{
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-    border: 2px solid transparent;
-    transition: border-color 0.5s ease-in-out;
-  
-  }
-  
-  #block-links a:hover{
-    border: 2px solid var(--secondary-color);
-  }
-  #block-links a:active{
-  background-color: var(--accent-color);
-  color:var(--secondary-color)
-  }
   footer{
     background-color: var(--secondary-color);
     text-align: center;
