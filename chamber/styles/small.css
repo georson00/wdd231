@@ -307,13 +307,15 @@ nav a.open{
     color: var(--contrast-color);
     margin: 15px 0;
     padding: 30px 10px; 
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px 0 #333;
     transition: all 0.5s ease-out;
+    max-width: 100%;
+    height: 600px;
 
 }
 .company-card h3{
   color: var(--secondary-color);
-  padding: 10px;
+  
 }
 .company-card a{
   text-decoration: none;
@@ -326,15 +328,21 @@ nav a.open{
   
 }
 .company-card a:hover{
-  text-decoration: underline;
+  color: var(--primary-color);
 }
-
+.company-card img{
+  max-width: 350px;
+  height:400px;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  
+}
 .company-card p{
  
   text-align: center;
   color: var(--primary-color);
   font-weight: 450;
-  line-height: 1rem;
+
   font-size: 16px;
   margin: 20px 0;
   
@@ -359,9 +367,10 @@ nav a.open{
   footer{
     background-color: var(--secondary-color);
     text-align: center;
-    color: var(--primary-color);
+    color: var(--contrast-color);
     font-weight: 500;
     padding: 10px;
+
   }
   #bold {
     font-weight: bold;
