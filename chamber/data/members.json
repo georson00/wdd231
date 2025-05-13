@@ -25,7 +25,7 @@
         "phone": "+509 40 32 9876",
         "email": "info@Leoganetechhub.com",
         "website": "https://haitiantechhub.com",
-        "image": "https://example.com/tech-hub.jpg",
+        "image": "images/leogane_tech_hub.webp",
         "membershipType": "gold",
         "industry": "Technology"
     },
@@ -35,7 +35,7 @@
         "phone": "+509 22 55 6789",
         "email": "info@kaloverestaurent.com",
         "website": "https://kaloverestaurent.com",
-        "image": "https://example.com/tropical-cafe.jpg",
+        "image": "images/kalove-restaurant.webp",
         "membershipType": "bronze",
         "industry": "Food & Beverage"
     },
@@ -45,7 +45,7 @@
         "phone": "+509 33 44 5678",
         "email": "info@ecobuilders.com",
         "website": "https://ecobuilders.com",
-        "image": "https://example.com/eco-builders.jpg",
+        "image": "images/ecobuilders.jpg",
         "membershipType": "silver",
         "industry": "Construction"
     },
@@ -65,7 +65,7 @@
         "phone": "+509 77 88 9900",
         "email": "info@sunriseboutique.com",
         "website": "https://sunriseboutique.com",
-        "image": "https://example.com/sunrise-boutique.jpg",
+        "image": "images/sunrise-boutique.webp",
         "membershipType": "bronze",
         "industry": "Retail"
     }
