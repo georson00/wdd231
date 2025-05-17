@@ -42,7 +42,7 @@ function displayCompanies(companies){
     <img src="${company.image}" alt="${company.name} Logo" width="400" height="200" class="company-logo" object-fit="cover">
     <p>Phone: ${company.phone}</p>
     <p>Email: ${company.email}</p>
-    <a href="${company.website}" target="_blank">Visit Website</a>
+    <a href="${company.website}" target="_blank" rel="noopener">Visit Website &#8599;</a>
     `;
     container.appendChild(card);
 

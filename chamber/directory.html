@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a web page of a chamber of commerce for Léogâne.">
     <meta name="author" content="Nelson Georges">
     <meta property="og:title" content="Léogâne Chamber of Commerce Page Directory">
-    <meta property="og:description" content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
-    <meta property="og:image" content="https://georson00.github.io/wdd231/chamber/images/leogane.jpg">  
+    <meta property="og:description"
+        content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
+    <meta property="og:image" content="https://georson00.github.io/wdd231/chamber/images/leogane.jpg">
     <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -15,89 +17,105 @@
     <link rel="preload" href="/styles/small.css" as="style">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap">
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="scripts/active-nav.js" defer></script>
+    <script src="scripts/view-toggle.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkmode-toggle.js" defer></script>
     <script src="scripts/get-weather-data.js" defer></script>
     <script src="scripts/get-companies-data.js" defer></script>
     <link rel="icon" href="images/chamber-icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-p1cmYPrT1SxX/vJ7zFg+6J+wzNlH8RX3swT0pSxuVhuH7P94Kz0rWTBQY/nV8O1+z8E93Yv8Uv/Z98JMcq/DUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
 
     <title>Leogane Chamber of Commerce</title>
 </head>
+
 <body>
 
     <header>
-        <div class="logo"><a href="directory.html"><img src="images/logo.png" alt="Leogane Chamber of Commerce Photo" width="100" height="100"></a></div>
+        <div class="logo">
+            <a href="directory.html">
+                <img src="images/logo.png" alt="Leogane Chamber of Commerce Photo" width="100" height="100">
+            </a>
+        </div>
         <div class="site-title">
             <p><a href="directory.html">Léogâne</a></p>
             <span>Chamber of Commerce</span>
         </div>
         <button id="menuButton" name="hamburger menu" aria-label="toggle menu"></button>
         <a id="darkModeToggle"><img src="images/dark-mode-icon.png" alt="Dark Mode Icon" width="60"></a>
-        </div> 
+        </div>
     </header>
-        <nav id="navbar">
-        
-            <ul class="menuLinks">
-                <li><a href="index.html" id="home">Home</a></li>
-                <li class="current-menu-item"><a href="#">Chamber</a></li>
-                <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
-            </ul>
+    <nav id="navbar">
 
-        </nav>
-    <main >
+        <ul class="menuLinks">
+            <li><a href="../index.html" id="home">Home</a></li>
+            <li class="current-menu-item"><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+
+    </nav>
+    <main>
         <h1>Home</h1>
         <div class="cards-container">
-        <section class="event-card">
-            <h2>Events</h2>
-            <p>Cultural Conference at Arawak Hotel this July 8<sup>th</sup>, 2026</p>
-            <img src="images/arawak-hotel.jpg" alt="Arawak Hotel" width="400" height="200">
-            <p>Join us for a cultural conference at the Arawak Hotel. The event will feature guest speakers, workshops, and networking opportunities.</p>
-        </section>
-        <section class="weather-card">
-            <h2>Current Weather</h2>
-            <div id="weatherResult">Loading weather...</div>
-        
-        </section>
-        <section class="forecast-container">
-            <h2>Weather Forcast</h2>
-            <div id="forecastResult">Loading forecast...</div>
-        </section>
+            <section class="event-card">
+                <h2>Events</h2>
+                <p>Cultural Conference at Arawak Hotel this July 8<sup>th</sup>, 2026</p>
+                <img src="images/arawak-hotel.jpg" alt="Arawak Hotel" width="400" height="200">
+                <p>Join us for a cultural conference at the Arawak Hotel. The event will feature guest speakers,
+                    workshops, and networking opportunities.</p>
+            </section>
+            <section class="weather-card">
+                <h2>Current Weather</h2>
+                <div id="weatherResult">Loading weather...</div>
+
+            </section>
+            <section class="forecast-container">
+                <h2>Weather Forcast</h2>
+                <div id="forecastResult">Loading forecast...</div>
+            </section>
         </div>
-        <section >
-            <h2 id="business-h2">Businesses</h2>
+        <section>
+            <h2 id="business-h2">Business Directory</h2>
+            <div class="view-toggle">
+                <button id="gridView"><img src="images/grid-icon.png" alt="Grid View" width="50" height="50"></button>
+                <button id="listView"><img src="images/list-icon.png" alt="List View" width="50" height="50"></button>
+            </div>
             <div id="companiesContainer"></div>
         </section>
-        
-        
+
+
     </main>
     <footer>
-        <p><span id="bold">Léogâne Chamber of Commerce</span> <br>
-        264 Route de Darbonne <br> 
-        Léogâne, Ouest, Haiti <br>
-        info@leoganecc.org <br><br>
-        
-        <a class="social-media-icon" href="https://www.facebook.com/profile.php?id=100088767862583" target="_blank">
-            <img src="images/facebook.icon.png" alt="Facebook Icon">
-        </a>
-        <a class="social-media-icon" href="https://www.youtube.com/@nelsongeorges439" target="_blank">
-            <img src="images/youtube-icon.png" alt="Youtube Icon">
-        </a>
-        <a class="social-media-icon" href="https://linkedin.com/ion/georson" target="_blank">
-            <img src="images/linkedin-con.png" alt="Linkedin Icon">
-        </a> <br><br>
-        WDD231 Class Project<br>
-        Nelson Georges</p>
+        <p><span id="bold">Léogâne Chamber of Commerce</span></p>
+            <p>264 Route de Darbonne</p>
+            <p>info@leoganecc.org</p> 
+
+            <a class="social-media-icon" href="https://www.facebook.com/profile.php?id=100088767862583" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a class="social-media-icon" href="https://www.youtube.com/@nelsongeorges439" target="_blank">
+                <img src="images/youtube.png" alt="Youtube Icon">
+            </a>
+            <a class="social-media-icon" href="https://linkedin.com/ion/georson" target="_blank">
+                <img src="images/linkedin.png" alt="Linkedin Icon">
+            </a> 
+        <p>WDD231 Class Project</p>
+        <p>Nelson Georges</p>
         <p><span id="copyright"></span><span id="currentYear"></span> Léogâne Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

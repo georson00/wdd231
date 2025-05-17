@@ -57,7 +57,6 @@ function fetchForecastData(){
             if (!dailyForecast[date]){
                 dailyForecast[date] = {
                     temp: Math.round(item.main.temp),
-                    icon: item.weather[0].icon,
                     desc: item.weather[0].description
                 };
             }
@@ -69,7 +68,6 @@ function fetchForecastData(){
             return `
             <div class="forcast-card">
             <h4>${day}</h4>
-            <img src="https://openweathermap.org/img/wn/${forecast.icon}@2x.png" alt="Weather Icon">
             <p class="temperature">${forecast.temp}°F</p>
             <p>${forecast.desc.charAt(0).toUpperCase() + forecast.desc.slice(1)}</p>
             </div>

@@ -1,133 +1,133 @@
-
-  :root{
-    --primary-color: #5dde46; 
-    --secondary-color: #161270; 
-    --accent-color: orange;
-    --contrast-color: white;
-  }
-  *{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-  .dark-mode{
-    background-color: #121212;
-    color:white;
-  }
-  .dark-mode nav{
-    background: #333;
-  }
-  #darkModeToggle{
- grid-column: 3;
- position: absolute;
- right: 30px;
- bottom: 5px;
- border: none;
-
-  }
-  body{
-    font-family: "Quicksand", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    margin: 0 auto;
-    
-  }
-  
-  
-  h1, h2, nav a{
-    font-weight: 500;
-    font-style: normal;
-  
-  }
-  header{
-    display: grid;
-    background-color:  var(--primary-color);
-    color: var(--contrast-color);
-    box-shadow: 0 0 30px #333;  
-    grid-template-columns: 1fr auto auto 1fr;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative; 
- 
-    
-  }
-  .logo img{
-    border-radius: 50%;
-    margin: 10px 0 0 0 ;
-    border: 3px solid var(--secondary-color);
-    
-    
-  }
- 
-  .logo{
-    grid-column: 1;
+:root {
+  --primary-color: #5dde46;;
+  --secondary-color: #161270;
+  --accent-color: orange;
+  --contrast-color: white;
 }
-.site-title{
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode nav {
+  background: #333;
+}
+
+#darkModeToggle {
+  grid-column: 3;
+  position: absolute;
+  right: 30px;
+  bottom: 5px;
+  border: none;
+
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0 auto;
+
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+
+.member {
+  color: blue;
+}
+
+
+
+
+#bold {
+  font-weight: bold;
+}
+
+
+header {
+  display: grid;
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  box-shadow: 0 0 30px #333;
+  grid-template-columns: 1fr auto auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+
+
+}
+
+.logo img {
+  border-radius: 50%;
+  margin: 10px 0 0 0;
+  border: 3px solid var(--secondary-color);
+
+
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.site-title {
   grid-column: 2;
   justify-content: center;
   align-items: center;
-  
-}
-.site-title p a{
-    font-weight: 700;
-    font-size: 35px;
-    
-  }
 
-.site-title span{
+}
+
+.site-title p a {
+  font-weight: 700;
+  font-size: 35px;
+
+}
+
+.site-title span {
   font-size: 20px;
   font-weight: 500;
   color: var(--contrast-color);
 }
-#darkModeToggle img{
+
+#darkModeToggle img {
   border-radius: 35px;
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
 
-  header a{
-   text-decoration: none;
-   color: var(--secondary-color);
-   margin: 0 0 10px 0;
-  }
-  h1, #business-h2{
-    margin: 25px 0 0 25px;
-  
-  }
-  .logo{
-    justify-items: center;
-    align-items: center;
-    
-  }
+header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 0 0 10px 0;
+}
 
- 
-#menuButton::before{
-  content:"\2630";
-  
+h1,
+#business-h2 {
+  margin: 25px 0 0 25px;
+
 }
-#menuButton.open{
-  transform: rotate(360deg);
-}
-#menuButton.open::before{
-  content:"X";
-  
-}
-#menuButton{
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color:var(--secondary-color);
-  cursor: pointer;
-  padding: .25rem 2vw;
-  width: 100%;
-  margin-top: -65px;
-  transition: transform 0.4s ease-out;
-  position:absolute;
-  right: -200px;
+
+.logo {
+  justify-items: center;
+  align-items: center;
 
 }
 nav {
@@ -142,152 +142,250 @@ nav {
   text-align: center;
 
 }
-li.current-menu-item a{
+
+li.current-menu-item a {
   color: var(--accent-color)
 }
-nav ul{
+
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-nav ul li{
-  
+
+nav ul li {
+
   text-align: center;
-  
+
 }
-ul.menuLinks li a{
+
+ul.menuLinks li a {
 
   display: block;
   padding: .75rem 2vw;
   color: #fff;
   text-decoration: none;
-  
+
 }
 
 
-.current-menu-item a{
-  background: rgb(0,0,0,0.2);
+.current-menu-item a {
+  background: rgb(0, 0, 0, 0.2);
   font-weight: bold;
 }
-nav.open{
-  
+
+nav.open {
+
   max-height: 500px;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  }
+}
 
 
 
-ul.menuLinks a:hover{
+ul.menuLinks a:hover {
   color: var(--accent-color);
   transition: all 0.3s ease-in-out;
 }
-nav a.open{
+
+nav a.open {
   color: var(--accent-color);
   font-weight: bold;
 }
 
+.cards-container {
+  max-width: 90%;
+  margin: auto;
+  padding: 15px;
 
+}
 
-  .cards-container{
-    max-width: 90%;
-    margin: auto;
-    padding: 15px;
-    
-  }
-  #weatherResult{
-    font-size: 16px;
-    margin-top: 15px;
-  }
-  .cards-container img{
-    padding: 10px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    }
-  
-  .event-card h2{
-    background-color: var(--primary-color);
-    color: var(--contrast-color);
-    text-align: center;
-    border-bottom: none;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
-    
-  }
-  .event-card{
-    color: var(--contrast-color);
-    margin: 15px 0;
-    padding: 0 0 10px 0;
-    box-shadow: 0 0 10px #333;
-    transition: all 0.5s ease-out;
-  }
-  .event-card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #333;
+#weatherResult {
+  font-size: 16px;
+  margin-top: 15px;
+}
 
-  }  
-  .event-card p{
-    font-weight: 450;
-    margin: 10px 0;
-    text-align: center;
-    color: var(--primary-color);
-    padding: 10px;
-  }
-  .event-card img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  
-  }
-  .weather-card, .forecast-container{
-    background-color: var(--primary-color);
-    color: var(--contrast-color);
-    padding: 0 0 10px 0;
-    margin: 20px 0;
-    box-shadow: 0 0 10px #333;
-    transition: all 0.5s ease-out;
-  }
-  .weather-card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #333;
-  }
-  .weather-card h2, .forecast-container h2{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    text-align: center;
-    border-bottom: none;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .weather-card img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  
-  }
-  .weather-card p{
-    text-align: center;
-    color: var(--contrast-color);
-    line-height: 2rem;
-  }
-#weatherResult{
+.cards-container img {
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.event-card h2 {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  text-align: center;
+  border-bottom: none;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+
+}
+
+.event-card {
+  color: var(--contrast-color);
+  margin: 15px 0;
+  padding: 0 0 10px 0;
+  box-shadow: 0 0 10px #333;
+  transition: all 0.5s ease-out;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #333;
+
+}
+
+.event-card p {
+  font-weight: 450;
+  margin: 10px 0;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 10px;
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.weather-card,
+.forecast-container {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  padding: 0 0 10px 0;
+  margin: 20px 0;
+  box-shadow: 0 0 10px #333;
+  transition: all 0.5s ease-out;
+}
+
+.weather-card:hover,
+.forecast-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #333;
+}
+
+.weather-card h2,
+.forecast-container h2 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-bottom: none;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.weather-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.weather-card p {
+  text-align: center;
+  color: var(--contrast-color);
+  line-height: 2rem;
+}
+
+#weatherResult {
   font-size: 16px;
   margin-top: 15px;
   text-align: center;
 }
 
-#forecastResult{
+#forecastResult {
   font-size: 16px;
   margin-top: 15px;
   text-align: center;
 }
+.forcast-card p {
+  text-align: center;
+  color: var(--contrast-color);
+  line-height: 2rem;
+
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.view-toggle button {
+  border: 5px solid transparent;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  transition: border 0.3s, opacity 0.3s;
+  opacity: 0.7;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.view-toggle button.active {
+  border: 5px solid var(--secondary-color);
+  opacity: 1;
+}
+
+
+h1,
+h2,
+nav a {
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+
+
+
+#menuButton::before {
+  content: "\2630";
+
+}
+
+#menuButton.open {
+  transform: rotate(360deg);
+}
+
+#menuButton.open::before {
+  content: "X";
+
+}
+
+#menuButton {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: .25rem 2vw;
+  width: 100%;
+  margin-top: -65px;
+  transition: transform 0.4s ease-out;
+  position: absolute;
+  right: -200px;
+
+}
+
+
+
+
+
+
+
+/* .list-view{display:block;}
 
 #companiesContainer{
     max-width: 90%;
@@ -295,96 +393,137 @@ nav a.open{
     padding:15px;
     text-align: center;
     
+} */
+
+#companiesContainer img {
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-#companiesContainer img{
-    padding: 10px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    }
-.company-card{
-    color: var(--contrast-color);
-    margin: 15px 0;
-    padding: 30px 10px; 
-    box-shadow: 0 0 10px 0 #333;
-    transition: all 0.5s ease-out;
-    max-width: 100%;
-    height: 650px;
+
+.company-card {
+  color: var(--contrast-color);
+  margin: 15px 0;
+  padding: 30px 10px;
+  box-shadow: 0 0 10px 0 #333;
+  transition: all 0.5s ease-out;
+  max-width: 100%;
+  height: 650px;
+  text-align: center;
 
 }
-.company-card h3{
+
+.company-card h3 {
   color: var(--secondary-color);
-  
+
 }
-.company-card a{
+
+.company-card a {
   text-decoration: none;
-  background-color: var(--secondary-color);
   color: var(--accent-color);
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 3px;
   transition: all 0.3s ease-out;
-  
+
 }
-.company-card a:hover{
-  color: var(--primary-color);
+
+.company-card a:hover {
+  color: var(--secondary-color);
 }
-.company-card img{
+
+.company-card img {
   max-width: 350px;
-  height:400px;
+  height: 400px;
   margin: 0 auto;
   padding: 0 0 15px 0;
-  
+
 }
-.company-card p{
- 
+
+.company-card p {
+
   text-align: center;
   color: var(--primary-color);
   font-weight: 450;
 
   font-size: 16px;
   margin: 20px 0;
+
+}
+
+/* List view Styling */
+#companiesContainer.list-view{
+    padding:20px;
+   
+}
+#companiesContainer.list-view img{
+    display: none;
+}
+.list-view .company-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+  height: 120px;
+  box-shadow: none;
+
+
+}
+.list-view .company-card:nth-child(even) {
+  background-color: rgb(226, 226, 226);
   
 }
 
-.company-card:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #333;
+
+.list-view .company-card p {
+  flex: 1 1 25%;
+  margin: 5px 0;
+  text-align: start;
+} 
+.list-view .company-card a{
+  text-align: start;
+}
+.list-view .company-card h3{
+  flex: 1 1 25%;
+  margin: 10px;
+  text-align: start;
 }
 
-.gold{
-  color: gold;
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: var(--contrast-color);
+  font-weight: 500;
+  padding: 10px;
+
 }
-.silver{
-  color: silver;
+footer p{
+  margin: 5px;
+  font-size: 14px;
 }
-.member{
-  color: blue;
+#lastModified {
+  color: var(--primary-color);
 }
 
+.social-media-icon {
+  text-decoration: none;
 
-  footer{
-    background-color: var(--secondary-color);
-    text-align: center;
-    color: var(--contrast-color);
-    font-weight: 500;
-    padding: 10px;
+}
 
-  }
-  #bold {
-    font-weight: bold;
-  }
-  #lastModified{
-    color: var(--primary-color);
-  }
-  .social-media-icon{
-    text-decoration: none;
-    
-  }
-  .social-media-icon img{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    
-  }
+.social-media-icon img {
+  width: 50px;
+  height: 50px;
+ margin: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+
+}
+.social-media-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #333;
+}
+ 
