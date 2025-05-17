@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #3BA72F;
-  --secondary-color: #161270;
-  --accent-color: orange;
+  --primary-color: #003366	;
+  --secondary-color: #005A5A	;
+  --accent-color: #FFB400;
   --contrast-color: white;
 }
 
@@ -88,6 +88,7 @@ header {
 .site-title p a {
   font-weight: 700;
   font-size: 35px;
+  color: var(--accent-color);
 
 }
 
@@ -135,7 +136,7 @@ h1,
   font-size: 2rem;
   background:none;
   border: none;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   cursor: pointer;
   margin-top: -65px;
   transition: transform 0.4s ease-out;
@@ -292,7 +293,7 @@ nav a.open {
 .weather-card h2,
 .forecast-container h2 {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-align: center;
   border-bottom: none;
   font-size: 20px;
@@ -388,18 +389,18 @@ nav a {
 }
 .gold {
   color: gold;
-  background-color:  gold;
+  border: 2px solid gold;
 }
 
 .silver {
+  border: 2px solid silver;
   color: silver;
-  background-color: silver;
   
 }
 
 .bronze {
   color: goldenrod;
-  background-color: goldenrod;
+  border: 2px solid goldenrod;
 }
 
 .company-card:hover {
@@ -415,7 +416,7 @@ nav a {
 
 .company-card a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 3px;
@@ -449,13 +450,11 @@ nav a {
 
 }
 .company-card span {
-
-  font-size: 1rem;
   color: var(--secondary-color);
+  font-size: 1rem;
   font-weight: 500;
   width: 55px;
   padding: 2px;
-  border: 1px solid var(--secondary-color);
   margin-top: 10px;
   
 }
@@ -528,7 +527,7 @@ footer p{
   font-size: 14px;
 }
 #lastModified {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .social-media-icon {
