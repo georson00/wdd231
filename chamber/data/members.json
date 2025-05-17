@@ -2,7 +2,7 @@
     {
         "name": "Arawak Hotel",
         "address": "801 Rue de L'hopital, Léogâne 6210, Haiti",
-        "phone": "+509 22 26 0841",
+        "phone": "+509 2226 0841",
         "email": "info@arawakhotel.com",
         "website": "https://arawakhotel.com",
         "image": "images/Arawak-Hotel.jpg",
@@ -11,8 +11,8 @@
     },
     {
         "name": "Atlas Tires Auto Parts",
-        "address": "Guerin, Route Nationale #2, Léogâne, Haiti",
-        "phone": "+509 31 45 6789",
+        "address": "78 Guerin, Route Nationale #2, Léogâne, Haiti",
+        "phone": "+509 3145 6789",
         "email": "info@atlastires.com",
         "website": "https://leoganeautoparts.com",
         "image": "images/atlas.jpg",
@@ -21,8 +21,8 @@
     },
     {
         "name": "Leogane Tech Hub",
-        "address": "Tech Park, Léogâne, Haiti",
-        "phone": "+509 40 32 9876",
+        "address": "24 Grand Rue, Léogâne, Haiti",
+        "phone": "+509 4032 9876",
         "email": "info@Leoganetechhub.com",
         "website": "https://haitiantechhub.com",
         "image": "images/leogane_tech_hub.webp",
@@ -32,7 +32,7 @@
     {
         "name": "Kalove Restaurant",
         "address": "54 Route de Darbonne Léogâne, Haiti",
-        "phone": "+509 22 55 6789",
+        "phone": "+509 2255 6789",
         "email": "info@kaloverestaurent.com",
         "website": "https://kaloverestaurent.com",
         "image": "images/kalove-restaurant.webp",
@@ -41,8 +41,8 @@
     },
     {
         "name": "Eco Builders",
-        "address": "Construction Avenue, Léogâne, Haiti",
-        "phone": "+509 33 44 5678",
+        "address": "45 Christophe Avenue, Léogâne, Haiti",
+        "phone": "+509 3344 5678",
         "email": "info@ecobuilders.com",
         "website": "https://ecobuilders.com",
         "image": "images/ecobuilders.jpg",
@@ -51,8 +51,8 @@
     },
     {
         "name": "Hospital Sainte Croix",
-        "address": "Rue pere Thevenot, Léogâne, Haiti",
-        "phone": "+509 50 60 7890",
+        "address": "12 Rue pere Thevenot, Léogâne, Haiti",
+        "phone": "+509 5060 7890",
         "email": "info@hospitalsaintecroix.org",
         "website": "https://hospitalsaintecroix.com",
         "image": "images/hospital_sainte-croix.webp",
@@ -61,12 +61,32 @@
     },
     {
         "name": "Sunrise Boutique",
-        "address": "Market Street, Léogâne, Haiti",
-        "phone": "+509 77 88 9900",
+        "address": " 200 Market Street, Léogâne, Haiti",
+        "phone": "+509 7788 9900",
         "email": "info@sunriseboutique.com",
         "website": "https://sunriseboutique.com",
         "image": "images/sunrise-boutique.webp",
         "membershipType": "bronze",
         "industry": "Retail"
+    },
+        {
+        "name": "Nelka Auto Repair",
+        "address": "55 Rue Noir, Léogâne, Haiti",
+        "phone": "+509 7769 9900",
+        "email": "info@nelkaautorepair.com",
+        "website": "https://nelkaautorepair.com",
+        "image": "images/nelkaautorepair.webp",
+        "membershipType": "silver",
+        "industry": "Automotive"
+    },
+        {
+        "name": "Nelka Recycle Center",
+        "address": "26 Rue Noir, Léogâne, Haiti",
+        "phone": "+509 8928 9900",
+        "email": "info@nelkarecycle.com",
+        "website": "https://nelkarecycle.com",
+        "image": "images/nelkarecycle.webp",
+        "membershipType": "gold",
+        "industry": "Recycling"
     }
 ]
