@@ -25,20 +25,20 @@ function displayCompanies(companies){
     
     
 
-    let membershipType = "";
+    let membershipName = "";
     if (company.membershipType === "gold") {
-        membershipType = "Gold Member";
+        membershipName = "Gold Member";
     } else if (company.membershipType === "silver") {
-        membershipType = "Silver Member";
+        membershipName = "Silver Member";
     } else if (company.membershipType === "bronze") {
-        membershipType = "Bronze Member";
+        membershipName = "Bronze Member";
     } else {
-        membershipType = "Standard Member";
+        membershipName = "Standard Member";
     }
     card.innerHTML = `
-    <h3 class="${membershipType}">${company.name}</h3>
+    <h3>${company.name}</h3>
+    <span class="${company.membershipType}">${membershipName}</span>
     <p>${company.address}</p>
-    
     <img src="${company.image}" alt="${company.name} Logo" width="400" height="200" class="company-logo" object-fit="cover">
     <p>Phone: ${company.phone}</p>
     <p>Email: ${company.email}</p>

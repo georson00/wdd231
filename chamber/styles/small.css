@@ -14,6 +14,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-size: 1rem;
 }
 
 .dark-mode {
@@ -42,17 +43,7 @@ body {
 
 }
 
-.gold {
-  color: gold;
-}
 
-.silver {
-  color: silver;
-}
-
-.member {
-  color: blue;
-}
 
 
 
@@ -361,7 +352,7 @@ nav a.open {
 }
 
 .view-toggle button.active {
-  border: 5px solid var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   opacity: 1;
 }
 
@@ -375,25 +366,6 @@ nav a {
 }
 
 
-
-
-
-
-
-
-
-
-
-/* .list-view{display:block;}
-
-#companiesContainer{
-    max-width: 90%;
-    margin: auto;
-    padding:15px;
-    text-align: center;
-    
-} */
-
 #companiesContainer img {
   padding: 10px;
   max-width: 100%;
@@ -403,7 +375,7 @@ nav a {
 }
 
 .company-card {
-  color: var(--contrast-color);
+ 
   margin: 15px 0;
   padding: 30px 10px;
   box-shadow: 0 0 10px 0 #333;
@@ -414,6 +386,22 @@ nav a {
   border-radius: 5px;
 
 }
+.gold {
+  color: gold;
+  background-color:  gold;
+}
+
+.silver {
+  color: silver;
+  background-color: silver;
+  
+}
+
+.bronze {
+  color: goldenrod;
+  background-color: goldenrod;
+}
+
 .company-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #333;
@@ -421,8 +409,9 @@ nav a {
 }
 .company-card h3 {
   color: var(--secondary-color);
+  margin-bottom: 7px;
 
-}
+} 
 
 .company-card a {
   text-decoration: none;
@@ -436,7 +425,7 @@ nav a {
 
 .company-card a:hover {
   transform: scale(1.1);
- font-size: large;
+ font-size: 15px;
  text-decoration: underline;
 
 }
@@ -459,24 +448,38 @@ nav a {
   margin: 20px 0;
 
 }
+.company-card span {
 
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  width: 55px;
+  padding: 2px;
+  border: 1px solid var(--secondary-color);
+  margin-top: 10px;
+  
+}
 /* List view Styling */
 #companiesContainer.list-view{
-    padding:20px;
+  
+    padding:40px;
    
 }
 #companiesContainer.list-view img{
     display: none;
 }
 .list-view .company-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
-  height: 120px;
   box-shadow: none;
+  height: 120px;
+  align-items: center;
+  text-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+ 
 
 
 }
@@ -487,19 +490,31 @@ nav a {
 
 
 .list-view .company-card p {
-  flex: 1 1 25%;
+ 
   margin: 5px 0;
   text-align: start;
+  font-size: .7rem;
+  
 } 
 .list-view .company-card a{
   text-align: start;
+  margin: 5px 0;
+  font-size: .7rem;
 }
 .list-view .company-card h3{
-  flex: 1 1 25%;
-  margin: 10px;
+  margin: 5px 0;
+  font-size: .8rem;
+
   text-align: start;
 }
-
+.list-view .company-card span {
+  font-size: 12px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  width: 55px;
+  padding: 5px;
+  border: 1px solid var(--secondary-color);
+}
 footer {
   background-color: var(--secondary-color);
   text-align: center;

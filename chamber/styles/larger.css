@@ -45,17 +45,14 @@ nav ul li a{
     text-align: center;
 }
 .list-view .company-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 1rem;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
-  height: 100px;
   box-shadow: none;
-  border-bottom: .5px solid var(--secondary-color);
-  
-  
+  height: 120px;
+  align-items: center;
   
 
 }
@@ -77,16 +74,21 @@ nav ul li a{
   
 }
 .list-view .company-card p {
-  flex: 1 1 25%;
+  
   margin: 5px 0;
+  font-size: 1rem;
 } 
 .list-view .company-card h3{
-    flex: 1 1 25%;
+
     margin: 10px;
     text-align: start;
 }
 
-
+.list-view .company-card a{
+    text-align: start;
+    margin: 5px 0;
+    font-size: 1rem;
+}
 
 }
  
