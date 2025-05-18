@@ -1,11 +1,11 @@
 [
     {
-        "name": "Arawak Hotel",
+        "name": "Nelka Hotel",
         "address": "801 Rue de L'hopital, Léogâne 6210, Haiti",
         "phone": "+509 2226 0841",
         "email": "info@arawakhotel.com",
-        "website": "https://arawakhotel.com",
-        "image": "images/arawak-hotel.jpg",
+        "website": "https://nelkahotel.com",
+        "image": "images/nelkahotel.webp",
         "membershipType": "gold",
         "industry": "Hospitality"
     },
@@ -15,7 +15,7 @@
         "phone": "+509 3145 6789",
         "email": "info@atlastires.com",
         "website": "https://leoganeautoparts.com",
-        "image": "images/atlas.jpg",
+        "image": "images/atlastires.webp",
         "membershipType": "silver",
         "industry": "Automotive"
     },
