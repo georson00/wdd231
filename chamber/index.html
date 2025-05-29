@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a web page of a chamber of commerce for Léogâne.">
+    <meta name="description" content="This is the home page of a chamber of commerce for Léogâne.">
     <meta name="author" content="Nelson Georges">
-    <meta property="og:title" content="Léogâne Chamber of Commerce Page Directory">
+    <meta property="og:title" content="Léogâne Chamber of Commerce Home page">
     <meta property="og:description" content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
     <meta property="og:image" content="https://georson00.github.io/wdd231/chamber/images/leogane.jpg">
-    <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preload" href="/styles/larger.css" as="style">
@@ -33,7 +33,7 @@
     <script src="scripts/get-companies-data.js" defer></script>
     <link rel="icon" href="images/chamber-icon.ico">
 
-    <title>Leogane Chamber of Commerce</title>
+    <title>Leogane Chamber of Commerce Home</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
             </a>
         </div>
         <div class="site-title">
-            <p><a href="directory.html">Léogâne</a></p>
+            <p><a href="index.html">Léogâne</a></p>
             <span>Chamber of Commerce</span>
         </div>
     
@@ -58,23 +58,37 @@
     <nav id="navbar">
 
         <ul class="menuLinks">
-            <li><a href="index.html" id="home">Home</a></li>
-            <li class="current-menu-item"><a href="directory.html">Chamber</a></li>
+            <li class="current-menu-item"><a  href="index.html" id="home">Home</a></li>
+            <li ><a href="directory.html">Chamber</a></li>
             <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
             <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
         </ul>
 
     </nav>
     <main>
-        <h1>Chamber</h1>
-        
+        <h1>Home</h1>
+        <div class="cards-container">
+            <section class="event-card">
+                <h2>Events</h2>
+                <p>Cultural Conference at Arawak Hotel this July 8<sup>th</sup>, 2026</p>
+                <img src="images/nelkahotel.webp" alt="Nelka Hotel" width="400" height="200">
+                <p>Join us for a cultural conference at the Arawak Hotel. The event will feature guest speakers,
+                    workshops, and networking opportunities.</p>
+            </section>
+            <section class="weather-card">
+                <h2>Current Weather</h2>
+                <div id="weatherResult">Loading weather...</div>
+
+            </section>
+            <section class="forecast-container">
+                <h2>Weather Forcast</h2>
+                <div id="forecastResult">Loading forecast...</div>
+            </section>
+        </div>
         <section>
-            <h2 id="business-h2">Business Directory</h2>
-            <div class="view-toggle">
-                <button id="gridView"><img src="images/grid-icon.png" alt="Grid View" width="50" height="46"></button>
-                <button id="listView"><img src="images/list-icon.png" alt="List View" width="50" height="50"></button>
+            <div class ="hero-image">
+                <img src="images/leogane.jpg" alt="Léogâne Cityscape" width="100%" height="auto">
             </div>
-            <div id="companiesContainer"></div>
         </section>
 
 

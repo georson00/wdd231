@@ -205,7 +205,9 @@ nav a.open {
   color: var(--accent-color);
   font-weight: bold;
 }
-
+h1{
+  text-align: center;;
+}
 .cards-container {
   max-width: 90%;
   margin: auto;
