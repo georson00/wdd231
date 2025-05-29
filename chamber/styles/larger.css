@@ -55,7 +55,9 @@ nav ul li a{
     text-align: center;
     height: auto;
 }
-
+.company-card img{
+    box-shadow: none;
+}
 .list-view .company-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
