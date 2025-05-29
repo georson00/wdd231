@@ -59,7 +59,7 @@ nav ul li a{
 .list-view .company-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2;
+
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
   box-shadow: none;
@@ -71,8 +71,7 @@ nav ul li a{
  
 
 }
-.list-view .company-card-item{
-  flex: 0 0  0 100%; 
+.list-view .company-card-item{ 
   box-sizing: border-box;
   padding: .5rem;
   margin: .5rem;
