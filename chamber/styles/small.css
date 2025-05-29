@@ -1,7 +1,7 @@
 :root {
   --primary-color: #003366	;
-  --secondary-color: #005A5A	;
-  --accent-color: #FFB400;
+  --secondary-color: #013131	;
+  --accent-color: #fac64f;
   --contrast-color: white;
 }
 
@@ -16,7 +16,13 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
 }
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0 auto;
 
+}
 .dark-mode {
   background-color: #121212;
   color: white;
@@ -26,26 +32,6 @@ body {
   background: #333;
 }
 
-#darkModeToggle {
-  grid-column: 3;
-  position: absolute;
-  right: 30px;
-  bottom: 5px;
-  border: none;
-
-}
-
-body {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  margin: 0 auto;
-
-}
-
-
-
-
 
 
 #bold {
@@ -54,47 +40,52 @@ body {
 
 
 header {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--primary-color);
   color: var(--contrast-color);
   box-shadow: 0 0 30px #333;
-  grid-template-columns: 1fr auto auto 1fr;
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
-
+  padding: 0.5rem 0.5rem;
+  flex-wrap: nowrap;
+ 
 
 }
-
-.logo img {
-  border-radius: 50%;
-  margin: 10px 0 0 0;
-  border: 3px solid var(--secondary-color);
-
-
-}
-
 .logo {
-  grid-column: 1;
-}
-
-.site-title {
-  grid-column: 2;
-  justify-content: center;
-  align-items: center;
+place-self:start;
 
 }
+.logo img {
+  
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
+  padding: 0.5rem;
+  width:6.5rem;
+  height: auto;
 
-.site-title p a {
-  font-weight: 700;
-  font-size: 35px;
+
+}
+.site-title{
+  place-self: flex-start;
+  align-self: center;
+ 
+  
+  
+}
+
+
+.site-title p a{
+  font-size:2rem;
   color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
 
 }
 
-.site-title span {
-  font-size: 20px;
-  font-weight: 500;
+.site-title p {
+
+  font-size: 0.9rem;
   color: var(--contrast-color);
 }
 
@@ -112,11 +103,7 @@ h1,
 
 }
 
-.logo {
-  justify-items: center;
-  align-items: center;
 
-}
 #menuButton::before {
   content: "\2630";
 
@@ -130,37 +117,44 @@ h1,
   content: "X";
 
 }
-
-#menuButton {
-  grid-column: 5;
+.small-buttons{
+  place-self: end;
+}
+#menuButton{
+ place-self:end;
+ align-self: first baseline;
   font-size: 2rem;
   background:none;
   border: none;
   color: var(--accent-color);
   cursor: pointer;
-  margin-top: -65px;
   transition: transform 0.4s ease-out;
  
 
 }
+#darkModeToggle {
+  align-self:end;
+  align-self: last baseline;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+
+}
 #darkModeToggle img {
-  grid-column: 4;
+  
   border-radius: 35px;
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 nav {
-  max-height: 0;
-  transform: translateY(-20px);
-  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
+  flex-direction: column;
+  display: none;
   background-color: var(--secondary-color);
   width: 100%;
-  text-align: center;
-  border: 1px solid var(--secondary-color);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 30px #333;
+ 
+  
 
 }
 
@@ -190,15 +184,14 @@ ul.menuLinks li a {
 
 .current-menu-item a {
   background: var(--primary-color);
-  font-weight: bold;
+
 }
 
 nav.open {
 
-  max-height: 500px;
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
+  display: flex;
+  
+
 }
 
 
@@ -259,6 +252,7 @@ nav a.open {
 }
 
 .event-card p {
+  font-size: 1.2rem;
   font-weight: 450;
   margin: 10px 0;
   text-align: center;
@@ -310,13 +304,14 @@ nav a.open {
 }
 
 .weather-card p {
+  font-size: 1.2rem;
   text-align: center;
   color: var(--contrast-color);
   line-height: 2rem;
 }
 
 #weatherResult {
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-top: 15px;
   text-align: center;
 }
@@ -388,19 +383,28 @@ nav a {
 
 }
 .gold {
-  color: gold;
-  border: 2px solid gold;
+  
+  border-left: 5px solid gold;
+  border-bottom: 5px solid gold;
+  border-right: 5px solid gold;
+  border-radius: 50%;
 }
 
 .silver {
-  border: 2px solid silver;
-  color: silver;
+  border-left: 5px solid silver;
+  border-bottom: 5px solid silver;
+  border-right: 5px solid silver;
+  border-radius: 50%;
+
   
 }
 
 .bronze {
-  color: goldenrod;
-  border: 2px solid goldenrod;
+  
+  border-left: 5px solid goldenrod;
+  border-bottom: 5px solid goldenrod;
+  border-right: 5px solid goldenrod;
+  border-radius: 50%;
 }
 
 .company-card:hover {
@@ -439,25 +443,11 @@ nav a {
 
 }
 
-.company-card p {
-
-  text-align: center;
-  color: var(--primary-color);
-  font-weight: 450;
-
-  font-size: 16px;
-  margin: 20px 0;
-
+.company-card p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
 }
-.company-card span {
-  color: var(--secondary-color);
-  font-size: 1rem;
-  font-weight: 500;
-  width: 55px;
-  padding: 2px;
-  margin-top: 10px;
-  
-}
+ */
 /* List view Styling */
 #companiesContainer.list-view{
   
@@ -467,51 +457,59 @@ nav a {
 #companiesContainer.list-view img{
     display: none;
 }
-.list-view .company-card {
+ .list-view .company-card {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
+ 
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
   box-shadow: none;
-  height: 120px;
+  height: auto;
   align-items: center;
-  text-wrap: wrap;
-  gap: 5px;
-  padding: 10px;
- 
+  padding: 1.5rem;
+  
+  
+ }
+.list-view .company-card-item{
 
-
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 .list-view .company-card:nth-child(even) {
   background-color: rgb(226, 226, 226);
   
 }
+.list-view.gold, .silver, .bronze{
 
+  padding:.2em;
+  margin:1rem;
+  color: var(--secondary-color);
+  
+}
 
 .list-view .company-card p {
- 
-  margin: 5px 0;
-  text-align: start;
-  font-size: .7rem;
+place-self: end;
+align-self: center;
+margin: .5rem;
+font-size: .7rem;
   
 } 
 .list-view .company-card a{
   text-align: start;
   margin: 5px 0;
   font-size: .7rem;
+  place-self: end;
 }
 .list-view .company-card h3{
-  margin: 5px 0;
+  place-self: start;
+  margin:0 2rem;
   font-size: .8rem;
-
   text-align: start;
 }
-.list-view .company-card span {
-  font-size: 12px;
-  font-weight: 500;
-  width: 55px;
-  padding: 5px;
-  
+
+.list-view .company-card:hover{
+  transform: none;
+  box-shadow: 0 0 20px #333;
 }
 footer {
   background-color: var(--secondary-color);
@@ -523,7 +521,7 @@ footer {
 }
 footer p{
   margin: 5px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 #lastModified {
   color: var(--accent-color);
@@ -539,11 +537,13 @@ footer p{
   height: 50px;
  margin: 10px;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
+  
 
 }
 .social-media-icon img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px var(--accent-color);
+  
 }
  

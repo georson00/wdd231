@@ -1,14 +1,22 @@
-@media (min-width:760px ) {
+ @media (min-width:760px ) {
    #menuButton{
     display: none;
 }
+.site-title{
+    font-size: 1.5rem;
+}
 header{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    height:auto;
+}
+.logo{
+    place-self: center;
 }
 nav{
     
-    max-height: 500px;
+    display: block;
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
@@ -22,15 +30,17 @@ nav ul {
 }
 
 nav ul li a{
-    font-size: 18px;
+    font-size: 1rem;
     padding: 1rem 2vw;
+    font-weight: 300;
 }
+
 
 
 .cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: .5rem;
     padding: 10px 6rem;
     margin: 0 auto;
     justify-content: center;
@@ -39,21 +49,34 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding: 10px 6rem;
+    padding: 2rem;
     margin: 0 auto;
     place-items: center;
     text-align: center;
+    height: auto;
 }
+
 .list-view .company-card {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
   box-shadow: none;
-  height: 120px;
+  height: 170px;
+  padding: 1rem;
   align-items: center;
-  
+  justify-content: left;
+ 
+ 
+
+}
+.list-view .company-card-item{
+  flex: 0 0  0 100%; 
+  box-sizing: border-box;
+  padding: .5rem;
+  margin: .5rem;
+  text-align: left;
 
 }
 #companiesContainer.list-view img{
@@ -65,30 +88,15 @@ nav ul li a{
    
 }
 
-.list-view .company-card:nth-child(even) {
-  background-color: lightgray;
-  
-}
-.list-view .company-card:nth-child(even) p{
-  color: var(--contrast-color); 
-  
-}
+
+
 .list-view .company-card p {
   
-  margin: 5px 0;
+  
   font-size: 1rem;
-} 
-.list-view .company-card h3{
-
-    margin: 10px;
-    text-align: start;
 }
 
-.list-view .company-card a{
-    text-align: start;
-    margin: 5px 0;
-    font-size: 1rem;
-}
 
 }
- 
+  
+
