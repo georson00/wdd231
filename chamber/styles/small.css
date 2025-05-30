@@ -454,11 +454,7 @@ nav a {
 }
 
 /* List view Styling */
-#companiesContainer.list-view{
-  
-    padding:40px;
-   
-}
+
 #companiesContainer.list-view img{
     display: none;
 }
@@ -552,3 +548,44 @@ footer p{
   
 }
  
+/* Home Page*/
+.hero-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--contrast-color);
+
+  border-radius: 10px;
+
+  width: 90%;
+  
+}
+.hero-overlay h2 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+#callToAction {
+
+  font-size: 1.2rem;
+  margin-top: 3.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 20% 20%;
+  transition: all 0.3s ease-out;
+}
+#callToAction:hover {
+  box-shadow: 0 0 10px var(--accent-color);;
+  transform: scale(1.1);
+}
