@@ -558,7 +558,7 @@ footer p{
 
 .hero-overlay{
   position: absolute;
-  top: 45%;
+  top:20rem;
   left: 50%;
   max-width: 100%;
   transform: translate(-50%, -50%);
@@ -572,12 +572,18 @@ footer p{
 }
 .hero-overlay h2 {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: .5rem;
+}
+.hero-overlay p{
+  background-color: #013131b4;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
 }
 #callToAction {
 
   font-size: 1.2rem;
-  margin-top: 3.5rem;
+  margin-top: .5rem;
   color: var(--accent-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -588,4 +594,28 @@ footer p{
 #callToAction:hover {
   box-shadow: 0 0 10px var(--accent-color);;
   transform: scale(1.1);
+}
+@media screen and (min-width: 400px){
+  .hero-overlay h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+}
+  .hero-overlay p{
+  background-color: #013131b4;
+  padding: 1.5rem .5rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+#callToAction {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 20% 20%;
+  transition: all 0.3s ease-out;
+}
 }
