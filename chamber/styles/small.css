@@ -148,11 +148,13 @@ h1,
 }
 nav {
   flex-direction: column;
-  display: none;
+  overflow: hidden;
   background-color: var(--secondary-color);
   width: 100%;
-  transition: all 0.5s ease-out;
+  transition: max-height 0.3s ease-out;
   box-shadow: 0 0 30px #333;
+  max-height: 0;
+  
  
   
 
@@ -190,7 +192,10 @@ ul.menuLinks li a {
 nav.open {
 
   display: flex;
+  transform: translateX(0);
+  opacity: 1;
   
+  max-height: fit-content;
 
 }
 
@@ -337,21 +342,18 @@ h1{
 
 
 }
-
-.view-toggle button {
-  border: 5px solid transparent;
-  background-color: #fff;
-  padding: 5px;
+.view-toggle button{
+background-color: var(--secondary-color);
+  padding: .5em 1em;
   cursor: pointer;
-  transition: border 0.3s, opacity 0.3s;
-  opacity: 0.7;
   margin: 0 10px;
-  border-radius: 5px;
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: all 0.3s ease-out;
 }
-
-.view-toggle button.active {
-  border: 3px solid var(--secondary-color);
-  opacity: 1;
+.view-toggle button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--accent-color);
 }
 
 
@@ -364,7 +366,7 @@ nav a {
 }
 
 
-#companiesContainer img {
+#companiesContainer img, #companySpotlight img {
   padding: 10px;
   max-width: 100%;
   height: auto;
@@ -455,7 +457,10 @@ nav a {
 
 /* List view Styling */
 
-#companiesContainer.list-view img{
+
+
+
+#companiesContainer.list-view img, #companySpotlight.list-view img{
     display: none;
 }
  .list-view .company-card {
@@ -550,72 +555,57 @@ footer p{
  
 /* Home Page*/
 .hero-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  position: relative;
+  min-height: 50vh;
+  background-image: url("../images/leboucanier.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
 }
 
 .hero-overlay{
+  
   position: absolute;
-  top:20rem;
+  top: 30%; 
   left: 50%;
-  max-width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--contrast-color);
-
   border-radius: 10px;
-
   width: 90%;
-  
+  padding: 1rem;
 }
 .hero-overlay h2 {
-  font-size: 1rem;
-  margin-top: -2rem;
-  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  
 }
 .hero-overlay p{
-  background-color: #013131b4;
-  padding: .5rem 1rem;
+  font-size: 1rem;
+  background-color: rgba(1, 49, 49, 0.7);
   border-radius: .5rem;
+  margin: 1rem 0;
+  padding: .75rem;
+  color: var(--contrast-color);
+  
 }
 #callToAction {
-
-  font-size: 1.2rem;
-  margin-top: .5rem;
+  display: inline-block;
+  font-size: 1rem;
   color: var(--accent-color);
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  border-radius: 20% 20%;
+  padding: .6rem 1.2rem;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
   transition: all 0.3s ease-out;
+  cursor: pointer;
+  margin-top: 1rem;
+  transform: translateY(0);
 }
 #callToAction:hover {
-  box-shadow: 0 0 10px var(--accent-color);;
-  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--accent-color);
+  transform: translateY(-8px);
 }
-@media screen and (min-width: 400px){
-  .hero-overlay h2 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: .5rem;
-}
-  .hero-overlay p{
-  background-color: #013131b4;
-  padding: 1.5rem .5rem;
-  border-radius: .5rem;
-  font-size: 1.2rem;
-  margin-bottom: .5rem;
-}
-#callToAction {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  color: var(--accent-color);
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  background-color: var(--primary-color);
-  border-radius: 20% 20%;
-  transition: all 0.3s ease-out;
-}
-}
+

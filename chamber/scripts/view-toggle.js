@@ -1,5 +1,5 @@
-const gridButton = document.getElementById("gridView");
-const listButton = document.getElementById("listView");
+const gridButton = document.getElementById("gridViewButton");
+const listButton = document.getElementById("listViewButton");
 const container = document.getElementById("companiesContainer");
 
 gridButton.addEventListener("click", () => {
