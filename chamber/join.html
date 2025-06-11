@@ -7,7 +7,8 @@
     <meta name="description" content="This is the home page of a chamber of commerce for Léogâne.">
     <meta name="author" content="Nelson Georges">
     <meta property="og:title" content="Léogâne Chamber of Commerce Home page">
-    <meta property="og:description" content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
+    <meta property="og:description"
+        content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
     <meta property="og:image" content="https://georson00.github.io/wdd231/chamber/images/leogane.jpg">
     <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/">
     <meta property="og:type" content="website">
@@ -30,8 +31,8 @@
     <script src="scripts/darkmode-toggle.js" defer></script>
     <script src="scripts/modal.js" defer></script>
     <script src="scripts/timestamp.js" defer></script>
-    
-  
+
+
     <link rel="icon" href="images/chamber-icon.ico">
 
     <title>Leogane Chamber of Commerce Join page</title>
@@ -49,18 +50,18 @@
             <p><a href="index.html">Léogâne</a></p>
             <span>Chamber of Commerce</span>
         </div>
-    
-            <button id="menuButton" name="hamburger menu" aria-label="toggle menu"></button>
+
+        <button id="menuButton" name="hamburger menu" aria-label="toggle menu"></button>
         <a id="darkModeToggle"><img src="images/dark-mode-icon.png" alt="Dark Mode Icon" width="60"></a>
-        
-        
-        
+
+
+
     </header>
     <nav id="navbar">
 
         <ul class="menuLinks">
-            <li><a  href="index.html" id="home">Home</a></li>
-            <li ><a href="directory.html">Chamber</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="directory.html">Chamber</a></li>
             <li class="current-menu-item"><a href="join.html">Join</a></li>
             <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
             <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
@@ -69,115 +70,119 @@
     </nav>
     <main>
         <h1>Join Us</h1>
-   
-<section id="joinPageLayout">
-    <form method="GET" action="thankyou.html" class="designOne">
-      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-        <label>Organizational Title <input type="text" name="title" title="Enter your organizational title using only letters, hyphens, and spaces. Minimum 7 characters." autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
-        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-        <label>Cell Phone <input type="tel" name="phone" required  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-        <label>Organization<input type="text" required name="organization" autocomplete="organization"></label>
 
-    
-        <label>Membership Level
-          <select name="membership-level" required title="Membership Level Selection" >
-            <option value="">None</option>
-            <option value="Non-Profit">Non-Profit</Non-Profit></option>
-            <option value="Bronze">Bronze</option>
-            <option value="Silver">Silver</option>
-            <option value="Silver">Gold</option>
-          </select>
-        </label>
-        <label>Business Description</label><textarea id="description" 
-    name="description" 
-    rows="5" 
-    cols="40" 
-    title="Describe your organization"
-    placeholder="Tell us about your business or organization..."></textarea>
-        <label><input type="hidden" name="timestamp" id="timestamp"></label>
-    
+        <section id="joinPageLayout">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Organizational Title <input type="text" name="title"
+                        title="Enter your organizational title using only letters, hyphens, and spaces. Minimum 7 characters."
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel"
+                        title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                <label>Organization<input type="text" required name="organization" autocomplete="organization"></label>
 
-        <input type="submit" value="Apply for Membership">
-    </form>
 
-    <div id="membershipLevels">
-        <h3>Membership Levels</h3>
-        <div class="level-card">
-            <h3>Non-Profit Membership Level</h3>
-            <button id="openDialogBox1" class="learnmore">Learn More</button>
-        </div>
-        <dialog class="modal" id="dialogBox1" popover>
-        <button id="closeDialog1" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
-        <h3>🟡 Non-Profit Membership</h3>
-            <p>💲Cost: $15/month</p>
-            <p>Benefits:</p>
-            <ul>
-                <li>Access to quarterly nonprofit-only networking events</li>
-                <li>Free listing in the Chamber’s nonprofit directory</li>
-                <li>Invitations to monthly virtual workshops</li>
-                <li>10% discount on booth fees at Chamber-hosted events</li>
-            </ul>
-        
-    </dialog>
+                <label>Membership Level
+                    <select name="membership-level" required title="Membership Level Selection">
+                        <option value="">None</option>
+                        <option value="Non-Profit">Non-Profit</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Silver">Gold</option>
+                    </select>
+                </label>
+                <label>Business Description</label><textarea id="description" name="description" rows="5" cols="40"
+                    title="Describe your organization"
+                    placeholder="Tell us about your business or organization..."></textarea>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
 
-        <div class="level-card">
-            <h3>Bronze Membership Level</h3>
-            <button id="openDialogBox2" class="learnmore">Learn More</button>
-        </div>
-        
-        <dialog class="modal" id="dialogBox2" popover>
-        <button id="closeDialog2" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
-        <h3>🟤 Bronze Membership </h3>
-        <p>💲Cost: $30/month</p>
-            <p>Benefits:</p>
-            <ul>
-                <li>All Non-Profit benefits, plus:</li>
-                <li>Priority placement in the online business directory</li>
-                <li>Free job postings on the Chamber’s website</li>
-                <li>Access to exclusive member-only training sessions</li>
-                <li>Two social media spotlights per year on Chamber platforms</li>
-            </ul>
-    </dialog>
-        <div class="level-card">
-            <h3>Silver Membership Level</h3>
-            <button id="openDialogBox3" class="learnmore">Learn More</button>
-        </div>
-        <dialog class="modal" id="dialogBox3" popover>
-        <button id="closeDialog3" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
-        <h3>⚪ Silver Membership</h3>p
-        <p>💲Cost: $60/month</p>
-            <p>Benefits:</p>
-            <ul>
-                <li>All Bronze benefits, plus:</li>
-                <li>50% off event ticket pricing for all Chamber events</li>
-                <li>One dedicated email promotion per year to Chamber subscribers</li>
-                <li>Early access to sponsorship opportunities</li>
-                <li>Monthly business success toolkit with templates and guides</li>
-            </ul>
-    </dialog>
-        <div class="level-card">
-            <h3>Gold Membership Level</h3>
-            <button id="openDialogBox4" class="learnmore">Learn More</button>
-        </div>
-                <dialog class="modal" id="dialogBox4" popover>
-        <button id="closeDialog4" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
-        <h3>🟡 Gold Membership</h3>
-        <p>💲Cost: $100/month</p>
-            <p>Benefits:</p>
-            <ul>
-                <li>All Silver benefits, plus:</li>
-                <li>Featured spotlight on the Chamber homepage (1 week per quarter)</li>
-                <li>VIP access and reserved seating at all Chamber events</li>
-                <li>Complimentary registration for 4 major annual events</li>
-                <li>One-on-one quarterly business strategy session with Chamber leadership</li>
-                <li>Logo displayed in Chamber newsletter footer year-round</li>
-            </ul>
-    </dialog>
-        
 
-    </div>
-    </section>
+                <input type="submit" value="Apply for Membership">
+            </form>
+
+            <div id="membershipLevels">
+                <h3>Membership Levels</h3>
+                <div class="level-card">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button id="openDialogBox1" class="learnmore">Learn More</button>
+                </div>
+
+                <dialog class="modal" id="dialogBox1">
+                    <button id="closeDialog1">❌</button>
+                    <h3>🟡 Non-Profit Membership</h3>
+                    <p>💲Cost: $15/month</p>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to quarterly nonprofit-only networking events</li>
+                        <li>Free listing in the Chamber’s nonprofit directory</li>
+                        <li>Invitations to monthly virtual workshops</li>
+                        <li>10% discount on booth fees at Chamber-hosted events</li>
+                    </ul>
+
+                </dialog>
+
+                <div class="level-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="openDialogBox2" class="learnmore">Learn More</button>
+                </div>
+
+                <dialog class="modal" id="dialogBox2">
+                    <button id="closeDialog2" >❌</button>
+                    <h3>🟤 Bronze Membership </h3>
+                    <p>💲Cost: $30/month</p>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>All Non-Profit benefits, plus:</li>
+                        <li>Priority placement in the online business directory</li>
+                        <li>Free job postings on the Chamber’s website</li>
+                        <li>Access to exclusive member-only training sessions</li>
+                        <li>Two social media spotlights per year on Chamber platforms</li>
+                    </ul>
+                </dialog>
+                <div class="level-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="openDialogBox3" class="learnmore">Learn More</button>
+                </div>
+                <dialog class="modal" id="dialogBox3">
+                    <button id="closeDialog3">❌</button>
+                    <h3>⚪ Silver Membership</h3>p
+                    <p>💲Cost: $60/month</p>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>All Bronze benefits, plus:</li>
+                        <li>50% off event ticket pricing for all Chamber events</li>
+                        <li>One dedicated email promotion per year to Chamber subscribers</li>
+                        <li>Early access to sponsorship opportunities</li>
+                        <li>Monthly business success toolkit with templates and guides</li>
+                    </ul>
+                </dialog>
+                <div class="level-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="openDialogBox4" class="learnmore">Learn More</button>
+                </div>
+                <dialog class="modal" id="dialogBox4">
+                    <button id="closeDialog4">❌</button>
+                    <h3>🟡 Gold Membership</h3>
+                    <p>💲Cost: $100/month</p>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>All Silver benefits, plus:</li>
+                        <li>Featured spotlight on the Chamber homepage (1 week per quarter)</li>
+                        <li>VIP access and reserved seating at all Chamber events</li>
+                        <li>Complimentary registration for 4 major annual events</li>
+                        <li>One-on-one quarterly business strategy session with Chamber leadership</li>
+                        <li>Logo displayed in Chamber newsletter footer year-round</li>
+                    </ul>
+                </dialog>
+
+
+            </div>
+        </section>
     </main>
     <footer>
         <p><span id="bold">Léogâne Chamber of Commerce</span></p>
@@ -198,7 +203,7 @@
         <p><span id="copyright"></span><span id="currentYear"></span> Léogâne Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
- 
+
 </body>
 
 </html>
