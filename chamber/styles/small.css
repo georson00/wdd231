@@ -612,15 +612,15 @@ footer p{
 form {
     margin: 1rem 2%;
     padding: 1rem;
-
-    label {
+}
+form label {
       display: block;
       font-size: 1rem;
       font-weight: 500;
       color: var(--secondary-color);
       padding-top: .2rem;
-    }
-    h3 {
+}
+    form h3 {
       font-size: .9rem;
       color: var(--primary-color);
       margin: 1.5rem 0 .2rem 0;
@@ -666,7 +666,7 @@ form {
       transform: scale(1.1)
 
     }
-  }
+  
 
 #membershipLevels{
   padding: 1rem;
