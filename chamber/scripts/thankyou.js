@@ -11,7 +11,7 @@ if (timestampRaw) {
 document.getElementById('confirmation').innerHTML = `
 
 <h2> Thank You for Joining Us </h2>
-<p><strong>Welcome onboard! your registration is confirmed.</strong></p>
+<p><strong>Welcome onboard!We appreciate your time in completing your registration. Your registration is confirmed.</strong></p>
 <p>Name: ${userInfo.get('first')} ${userInfo.get('last')}</p>
 <p>Phone: ${userInfo.get('phone')}</p>
 <p>Email: ${userInfo.get('email')}</p>
