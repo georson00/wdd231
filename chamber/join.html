@@ -27,10 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="scripts/active-nav.js" defer></script>
     <script src="scripts/view-toggle.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkmode-toggle.js" defer></script>
-    <script src="scripts/get-weather-data.js" defer></script>
-    <script src="scripts/get-companies-data.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    
+  
     <link rel="icon" href="images/chamber-icon.ico">
 
     <title>Leogane Chamber of Commerce Join page</title>
@@ -69,8 +70,8 @@
     <main>
         <h1>Join Us</h1>
    
-
-    <form method="GET" action="thanks.html" class="designOne">
+<section id="joinPageLayout">
+    <form method="GET" action="thankyou.html" class="designOne">
       <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
         <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
         <label>Organizational Title <input type="text" name="title" title="Your Organization Title" autocomplete="organization-title"></label>
@@ -80,24 +81,98 @@
 
     
         <label>Membership Level
-          <select name="membership-level" required>
+          <select name="membership-level" required title="Membership Level Selection" >
             <option value="">None</option>
             <option value="Non-Profit">Non-Profit</Non-Profit></option>
             <option value="Bronze">Bronze</option>
             <option value="Silver">Silver</option>
             <option value="Silver">Gold</option>
+          </select>
         </label>
-
         <label>Business Description<input type="text" name="description" title="Your Business Description"></label>
-        <label><input type="hidden" name="timestamp" id="lastModified"></label>
+        <label><input type="hidden" name="timestamp" id="timestamp"></label>
     
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Apply for Membership">
     </form>
-    <h2>Membership Levels</h2>
+
     <div id="membershipLevels">
+        <h3>Membership Levels</h3>
+        <div class="level-card">
+            <h3>Non-Profit Membership Level</h3>
+            <button id="openDialogBox1" class="learnmore">Learn More</button>
+        </div>
+        <dialog class="modal" id="dialogBox1" popover>
+        <button id="closeDialog1" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
+        <h3>🟡 Non-Profit Membership</h3>
+            <p>💲Cost: $15/month</p>
+            <p>Benefits:</p>
+            <ul>
+                <li>Access to quarterly nonprofit-only networking events</li>
+                <li>Free listing in the Chamber’s nonprofit directory</li>
+                <li>Invitations to monthly virtual workshops</li>
+                <li>10% discount on booth fees at Chamber-hosted events</li>
+            </ul>
+        
+    </dialog>
+
+        <div class="level-card">
+            <h3>Bronze Membership Level</h3>
+            <button id="openDialogBox2" class="learnmore">Learn More</button>
+        </div>
+        
+        <dialog class="modal" id="dialogBox2" popover>
+        <button id="closeDialog2" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
+        <h3>🟤 Bronze Membership </h3>
+        <p>💲Cost: $30/month</p>
+            <p>Benefits:</p>
+            <ul>
+                <li>All Non-Profit benefits, plus:</li>
+                <li>Priority placement in the online business directory</li>
+                <li>Free job postings on the Chamber’s website</li>
+                <li>Access to exclusive member-only training sessions</li>
+                <li>Two social media spotlights per year on Chamber platforms</li>
+            </ul>
+    </dialog>
+        <div class="level-card">
+            <h3>Silver Membership Level</h3>
+            <button id="openDialogBox3" class="learnmore">Learn More</button>
+        </div>
+        <dialog class="modal" id="dialogBox3" popover>
+        <button id="closeDialog3" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
+        <h3>⚪ Silver Membership</h3>p
+        <p>💲Cost: $60/month</p>
+            <p>Benefits:</p>
+            <ul>
+                <li>All Bronze benefits, plus:</li>
+                <li>50% off event ticket pricing for all Chamber events</li>
+                <li>One dedicated email promotion per year to Chamber subscribers</li>
+                <li>Early access to sponsorship opportunities</li>
+                <li>Monthly business success toolkit with templates and guides</li>
+            </ul>
+    </dialog>
+        <div class="level-card">
+            <h3>Gold Membership Level</h3>
+            <button id="openDialogBox4" class="learnmore">Learn More</button>
+        </div>
+                <dialog class="modal" id="dialogBox4" popover>
+        <button id="closeDialog4" popovertarget ="levelInfo" popovertargetaction="hide">❌</button>
+        <h3>🟡 Gold Membership</h3>
+        <p>💲Cost: $100/month</p>
+            <p>Benefits:</p>
+            <ul>
+                <li>All Silver benefits, plus:</li>
+                <li>Featured spotlight on the Chamber homepage (1 week per quarter)</li>
+                <li>VIP access and reserved seating at all Chamber events</li>
+                <li>Complimentary registration for 4 major annual events</li>
+                <li>One-on-one quarterly business strategy session with Chamber leadership</li>
+                <li>Logo displayed in Chamber newsletter footer year-round</li>
+            </ul>
+    </dialog>
+        
 
     </div>
+    </section>
     </main>
     <footer>
         <p><span id="bold">Léogâne Chamber of Commerce</span></p>
@@ -118,6 +193,7 @@
         <p><span id="copyright"></span><span id="currentYear"></span> Léogâne Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
+ 
 </body>
 
 </html>

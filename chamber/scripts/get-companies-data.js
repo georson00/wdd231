@@ -18,6 +18,7 @@ async function loadCompanies() {
 
 function displayCompanies(companies){
     const container = document.getElementById("companiesContainer");
+   
 
     companies.forEach(company =>{
         const card = document.createElement("div");
@@ -46,8 +47,18 @@ function displayCompanies(companies){
     `;
     container.appendChild(card);
 
+
+
+
+
 });
+
 
 }
 
+
+
+
 document.addEventListener("DOMContentLoaded", loadCompanies); 
+
+

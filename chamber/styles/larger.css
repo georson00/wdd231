@@ -140,7 +140,38 @@ main{
     margin: 0 auto;
     justify-content: center;
 }
+
+
+/* Join Page*/
+#joinPageLayout{
+    display: flex;
+    justify-content: center;
+   
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(min-width: 900px){
