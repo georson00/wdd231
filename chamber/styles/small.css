@@ -28,10 +28,9 @@ body {
   color: white;
 }
 
-.dark-mode nav {
-  background: #333;
+.dark-mode h2, .dark-mode h3{
+color: var(--contrast-color);
 }
-
 
 
 #bold {
