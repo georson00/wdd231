@@ -14,7 +14,7 @@ async function loadCards() {
       const photo = document.createElement('img');
       photo.setAttribute('src', place.image);
       photo.setAttribute('alt', place.name);  
-      photo.setAttribute('loading', 'lazy');  
+        
 
       card.appendChild(photo);
 
