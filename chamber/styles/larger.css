@@ -154,7 +154,17 @@ main{
 
 
 
-
+#placesContainer{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8"
+    ;
+    
+  }
 
 
 
@@ -192,28 +202,22 @@ main{
   font-size: 1.2rem;
 
 }
+main{
+    max-width: 90rem;
+    margin: 0 auto;
+ }
 }
 
 
-/* Discover Page */
 
-/* Large Screens */
-/* @media (min-width: 1025px) {
+
+@media (min-width: 1025px) {
   #placesContainer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "card1 card2 card3 card4"
       "card5 card6 card7 card8";
   }
-} */
+} 
 
-@media (max-width: 640px) {
-    #placesContainer {
-        grid-template-areas: 
-           "card1 card2"
-           "card3 card4"
-           "card5 card6"
-           "card7 card8"
 
-    }
-}

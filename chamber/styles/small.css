@@ -587,7 +587,7 @@ footer p{
   color: var(--contrast-color);
   
 }
-#callToAction {
+#callToAction, .place-link {
   display: inline-block;
   font-size: 1rem;
   color: var(--accent-color);
@@ -600,7 +600,7 @@ footer p{
   margin-top: 1rem;
   transform: translateY(0);
 }
-#callToAction:hover {
+#callToAction:hover, .place-link:hover {
   box-shadow: 0 0 10px var(--accent-color);
   transform: translateY(-8px);
 }
@@ -769,8 +769,9 @@ color: var(--primary-color)
 }
 
 
+
 /* Discover Page*/
-@media screen and (max-width: 640px) {
+
   #placesConainer{
     display: grid;
     grid-template-areas: 
@@ -782,8 +783,9 @@ color: var(--primary-color)
     "card6"
     "card7"
     "card8";
+    
   }
-#placesConainer div{
+#placesContainer div{
     display: grid;
     padding: 1rem;
     margin: 1rem;
@@ -793,19 +795,55 @@ color: var(--primary-color)
     "address"
     "description"
     "link";
-    
-  }
-  .places-card img {
-    width: 100%;
-  }
-  .places-card h3 {
-    font-size: 1.2rem;
-    padding: 5rem;
-  }
-  .places-card p {
-    font-size: 1rem;
-  }
-}
+  place-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding:  1em;
+  box-shadow: 0 0 10px 0 #333;
+  transition: all 0.5s ease-out;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  overflow: visible;
+  transform-origin: center;
   
+  }
+  #placesContainer div img {
+    width: 100%;
+    grid-area: image;
+  }
+  #placesContainer div h2 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    grid-area: place;
+    text-align: center;
+  }
+  #placesContainer div p {
+    font-size: 1rem;
+    grid-area: description;
+    padding: .5rem;
+    text-align: left;
+    margin: 1rem;
+  }
+  #placesContainer div address {
+    font-size: 1rem;
+    padding: .5rem;
+    grid-area: address;
+  }
+  #placesContainer div a {
+    font-size: 1rem;
+    grid-area: link;
+    text-decoration: none;
+    color: var(--accent-color);
+    margin:1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-out;
+    
+   
+  }
 
+  
 

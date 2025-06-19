@@ -11,17 +11,21 @@ async function loadCards() {
     places.forEach((place ) => {
       const card = document.createElement('div');
       card.classList.add('place-card');
-      const photo = document.createElement('img');
-      photo.setAttribute('src', place.image);
-      photo.setAttribute('alt', place.name);  
-        
-
-      card.appendChild(photo);
+      
 
       const placeName = document.createElement('h2');
       placeName.textContent = place.name;
       card.appendChild(placeName);
 
+      const photo = document.createElement('img');
+      photo.setAttribute('src', place.image);
+      photo.setAttribute('alt', place.name);
+      photo.setAttribute('loading', 'lazy');
+      photo.setAttribute('width', '400');
+      photo.setAttribute('height', '200');  
+        
+
+      card.appendChild(photo);
       const address = document.createElement('address');
       address.textContent = place.address;  
       card.appendChild(address);
@@ -34,8 +38,9 @@ async function loadCards() {
       link.textContent = 'Learn More';
       link.setAttribute('href', place.url);
       link.setAttribute('target', '_blank');
+      link.classList.add('place-link');
 
-      link.setAttribute('rel', 'noopener');
+      
       card.appendChild(link);
 
 
