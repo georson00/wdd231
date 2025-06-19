@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the home page of a chamber of commerce for Léogâne.">
+    <meta name="description" content="This is a web page of a chamber of commerce for Léogâne.">
     <meta name="author" content="Nelson Georges">
-    <meta property="og:title" content="Léogâne Chamber of Commerce Home page">
+    <meta property="og:title" content="Léogâne Chamber of Commerce Page Directory">
     <meta property="og:description" content="We support businesses in Léogâne with resources, advocacy, and connection. Together, we’re building a stronger, more sustainable local economy.">
     <meta property="og:image" content="https://georson00.github.io/wdd231/chamber/images/leogane.jpg">
-    <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://georson00.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preload" href="/styles/larger.css" as="style">
     <link rel="preload" href="/styles/small.css" as="style">
     <link rel="stylesheet" href="styles/small.css">
@@ -30,10 +30,10 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkmode-toggle.js" defer></script>
     <script src="scripts/get-weather-data.js" defer></script>
-    <script src="scripts/get-random-data.js" defer></script>
+    <script src="scripts/get-places-data.js" defer></script>
     <link rel="icon" href="images/chamber-icon.ico">
 
-    <title>Leogane Chamber of Commerce Home</title>
+    <title>Leogane Chamber of Commerce</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
             </a>
         </div>
         <div class="site-title">
-            <p><a href="index.html">Léogâne</a></p>
+            <p><a href="directory.html">Léogâne</a></p>
             <span>Chamber of Commerce</span>
         </div>
     
@@ -58,51 +58,17 @@
     <nav id="navbar">
 
         <ul class="menuLinks">
-            <li class="current-menu-item"><a  href="index.html" id="home">Home</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
             <li ><a href="directory.html">Chamber</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li class="current-menu-item"><a href="discover.html">Discover</a></li>
             <li><a href="https://github.com/georson00" target="_blank">GitHub Profile</a></li>
             <li><a href="https://www.linkedin.com/in/nelsongeorges/" target="_blank">LinkedIn Profile</a></li>
         </ul>
 
     </nav>
     <main>
-        <h1>Home</h1>
-
-            <section class ="hero-image">
-                <div class="hero-overlay">
-                    <h2>Welcome to Léogâne Chamber of Commerce</h2>
-                    
-                    <a id="callToAction" href="join.html">Join Us</a>
-                </div>
-    
-            </section>
-        
-
-        <div class="cards-container">
-            <section class="event-card">
-                <h2>Events</h2>
-                <p>Cultural Conference at Arawak Hotel this July 8<sup>th</sup>, 2026</p>
-                <img src="images/nelkahotel.webp" alt="Nelka Hotel" width="400" height="200">
-                <p>Join us for a cultural conference at the Arawak Hotel. The event will feature guest speakers,
-                    workshops, and networking opportunities.</p>
-            </section>
-            <section class="weather-card">
-                <h2>Current Weather</h2>
-                <div id="weatherResult">Loading weather...</div>
-
-            </section>
-            <section class="forecast-container">
-                <h2>Weather Forcast</h2>
-                <div id="forecastResult">Loading forecast...</div>
-            </section>
-        </div>
-        <section>
-            <h2 id="business-h2">Company Spotlight</h2>
-            <div id="companySpotlight"></div>
-        </section>
-
+        <div class="grid-container" id="placesContainer"></div>
     </main>
     <footer>
         <p><span id="bold">Léogâne Chamber of Commerce</span></p>

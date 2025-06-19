@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="En-us">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelka Fitness</title>
+    <meta name="description" content="Nelka Fitness is your go-to destination for expert fitness tips, personalized workout plans, and motivation to live a healthier life.">
+    <meta name="author" content="Nelka Fitness Team">
+    <meta property="og:description" content="Join Nelka Fitness and take control of your health with guided workouts, wellness advice, and a community that supports your fitness journey.">
+    <meta property="og:title" content="Nelka Fitness">
+    <meta property="og:image" content="https://photos.app.goo.gl/B3KHiZ5DthEFtpob9">
+    <meta property="og:url" content="index.html">    
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/nelka_fitness_logo.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap">
+</noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/toggle-menu.js" defer></script>
+    <script src="scripts/active-nav.js" defer></script>
+    <script src="scripts/get-weather-data.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/nelka_fitness_logo.webp" alt="Nelka Fitness Photo" width="207" height="207">
+            </a>
+        </div>
+        <div class="site-title">
+            <p><a href="index.html">Nelka Fitness</a></p>
+            <span>Gymn</span>
+        </div>
+    
+            <button id="menuButton" name="hamburger menu" aria-label="toggle menu"></button>
+        <a id="darkModeToggle"><img src="images/dark-mode-icon.png" alt="Dark Mode Icon" width="60"></a>
+        
+        
+        
+    </header>
+    <nav id="navbar">
+
+        <ul class="menuLinks">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="join.html">Join Us</a></li>
+
+        </ul>
+
+
+    </nav>
+
+  <main>
+ 
+   <section class ="hero-image">
+                <div class="hero-overlay">
+                    <h2>Welcome to Nelka Fitness Gymn</h2>
+                    
+                    <a id="callToAction" href="join.html">Join Us</a>
+                </div>
+    
+            </section>
+            <section class="weather-card">
+                <h2>Current Weather</h2>
+                <div id="weatherResult">Loading weather...</div>
+
+            </section>
+            <section class="forecast-container">
+                <h2>Weather Forcast</h2>
+                <div id="forecastResult">Loading forecast...</div>
+                
+            </section>
+        </div>
+        <section>
+    
+      <!-- <div class="home-grid">
+      <h2>Stay Healthy and Live Longer</h2>
+      <p>This is one of the most obvious benefits of living a healthy lifestyle and is one of the main reasons why most people look to exercise and eat a healthy diet.<br>For those determined to get the most out of their body in terms of longevity, there is a whole host of evidence that links staying healthy with longer life.</p>
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/portrait-afro3.jpg?v=1648096242386" alt="Stay fit">
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/young-concentrated-athlete.jpg?v=1648096690656" alt="Fitness">
+      <h2>Feel Better About Yourself</h2>
+      <p>One of the main reasons why staying healthy can be of assistance to your life as you grow older. One of the main benefits is that living a healthy lifestyle can make you feel more confident than ever before. <br>Exercising can release hormones to your brain that enhance your mood and provide you with a sense of euphoria.</p>
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/im.jpg?v=1647057038549" alt="stay healthy">
+      <h2>Control Your Stress</h2>
+      <p>The modern world we live in is undoubtedly stressful, with the ability to switch off from work being a significant problem. One of the issues facing us is how to handle stress with exercise. <br>Those who live a healthy lifestyle have been proven in clinical studies to have lower levels of stress and anxiety.</p>
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/fitt.jpg?v=1647057823241" alt="control your stress">
+      <h2>Avoid Addiction</h2>
+      <p>No matter what kind of addiction you are affected by a healthy lifestyle filled with exercise can limit your desire for the addictive substance.<br> Whether your vice of choice is food, drugs, or alcohol, you will find a runner’s high just as addictive.</p>
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/avoid.jpg?v=1647060225636" alt="young Athletic girl">
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/avo.jpg?v=1647061267811" alt="Youg athletic girl">
+      <h2>Increase Your Fertility</h2>
+      <p>If you are looking for a fertile future with lots of children, the gym is the place to go.<br> Studies conducted by Harvard University researchers showed a higher sperm level among males who exercised regularly.</p>
+      <img src="https://cdn.glitch.global/7948a887-4428-4114-8b37-6571dc9bfbc7/happy-couple-smiling-after-find-out-positive-pregnancy-test-bedroom.jpg?v=1647062661494" alt="happy couple smiling after finding out pregnancy">
+      <h2>Become a Good Example</h2>
+      <p>Exercising regularly and living a healthy lifestyle will rub off on those around you. When your children and grandchildren see you exercising and eating healthily, they will be more likely to follow your example.</p>
+
+        
+      
+      
+
+
+    </div> -->
+ 
+  </main>
+<footer>
+        <p><span id="bold">Nelka Fitness</span></p>
+        <p>256 Main St, Baldwin, New York</p>
+        <p>info@nelkafitness.org</p>
+
+        <a class="social-media-icon" href="https://www.facebook.com/profile.php?id=100088767862583" target="_blank">
+            <img src="images/facebook.png" alt="Facebook Icon">
+        </a>
+        <a class="social-media-icon" href="https://www.youtube.com/@nelsongeorges439" target="_blank">
+            <img src="images/youtube.png" alt="Youtube Icon">
+        </a>
+        <a class="social-media-icon" href="https://linkedin.com/ion/georson" target="_blank">
+            <img src="images/linkedin.png" alt="Linkedin Icon">
+        </a>
+        <p>WDD231 Class Final Project</p>
+        <p>Nelson Georges</p>
+        <p><span id="copyright"></span><span id="currentYear"></span> Nelka Fitness</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+</body>
+
+</html>

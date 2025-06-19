@@ -1,10 +1,9 @@
 :root {
-  --primary-color: #003366	;
-  --secondary-color: #013131	;
-  --accent-color: #fac64f;
-  --contrast-color: white;
+  --primary-color: #6d38ff;     /* Bright Red */
+  --secondary-color: #2e2e2e;   /* Charcoal */
+  --accent-color: #ffc107;      /* Amber */
+  --contrast-color: #ffffff;    /* White */
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -221,55 +220,7 @@ h1{
   margin-top: 15px;
 }
 
-.cards-container img {
-  padding: 10px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
-.event-card h2 {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
-  text-align: center;
-  border-bottom: none;
-  font-size: 20px;
-  height: 50px;
-  line-height: 50px;
-
-}
-
-.event-card {
-  color: var(--contrast-color);
-  margin: 15px 0;
-  padding: 0 0 10px 0;
-  box-shadow: 0 0 10px #333;
-  transition: all 0.5s ease-out;
-}
-
-.event-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #333;
-
-}
-
-.event-card p {
-  font-size: 1.2rem;
-  font-weight: 450;
-  margin: 10px 0;
-  text-align: center;
-  color: var(--primary-color);
-  padding: 10px;
-}
-
-.event-card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-
-}
 
 .weather-card,
 .forecast-container {
@@ -331,26 +282,6 @@ h1{
 
 }
 
-.view-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-}
-.view-toggle button{
-background-color: var(--secondary-color);
-  padding: .5em 1em;
-  cursor: pointer;
-  margin: 0 10px;
-  color: var(--accent-color);
-  font-weight: 600;
-  transition: all 0.3s ease-out;
-}
-.view-toggle button:hover{
-  transform: scale(1.1);
-  box-shadow: 0 0 10px var(--accent-color);
-}
 
 
 h1,
@@ -361,158 +292,6 @@ nav a {
 
 }
 
-
-#companiesContainer img, #companySpotlight img {
-  padding: 10px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.company-card {
- 
-  margin: 15px 0;
-  padding: 50px 10px;
-  box-shadow: 0 0 10px 0 #333;
-  transition: all 0.5s ease-out;
-  max-width: 100%;
-  height: 685px;
-  text-align: center;
-  border-radius: 5px;
-  
-
-}
-.gold {
-  
-  border-left: 5px solid gold;
-  border-bottom: 5px solid gold;
-  border-right: 5px solid gold;
-  border-radius: 50%;
-}
-
-.silver {
-  border-left: 5px solid silver;
-  border-bottom: 5px solid silver;
-  border-right: 5px solid silver;
-  border-radius: 50%;
-
-  
-}
-
-.bronze {
-  
-  border-left: 5px solid goldenrod;
-  border-bottom: 5px solid goldenrod;
-  border-right: 5px solid goldenrod;
-  border-radius: 50%;
-}
-
-.company-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #333;
-
-}
-.company-card h3 {
-  color: var(--secondary-color);
-  margin-bottom: 7px;
-
-} 
-
-.company-card a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 3px;
-  transition: all 0.3s ease-in-out;
-
-}
-
-.company-card a:hover {
-  transform: scale(1.1);
- font-size: 15px;
- text-decoration: underline;
-
-}
-
-.company-card img {
-  max-width: 350px;
-  height: 400px;
-  margin: 0 auto;
-  padding: 0 0 15px 0;
-  box-shadow: 0 0 5px var(--secondary-color);
-  border-radius: 5px;
- 
-}
-
-.company-card p{
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-/* List view Styling */
-
-
-
-
-#companiesContainer.list-view img, #companySpotlight.list-view img{
-    display: none;
-}
- .list-view .company-card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
- 
-  border-bottom: 1px solid #ddd;
-  background-color: #f9f9f9;
-  box-shadow: none;
-  height: auto;
-  align-items: center;
-  padding: 1.5rem;
-  
-  
- }
-.list-view .company-card-item{
-
-  box-sizing: border-box;
-  padding: 0.5rem;
-}
-.list-view .company-card:nth-child(even) {
-  background-color: rgb(226, 226, 226);
-  
-}
-.list-view.gold, .silver, .bronze{
-
-  padding:.2em;
-  margin:1rem;
-  color: var(--secondary-color);
-  
-}
-
-.list-view .company-card p {
-place-self: end;
-align-self: center;
-margin: .5rem;
-font-size: .7rem;
-  
-} 
-.list-view .company-card a{
-  text-align: start;
-  margin: 5px 0;
-  font-size: .7rem;
-  place-self: end;
-}
-.list-view .company-card h3{
-  place-self: start;
-  margin:0 2rem;
-  font-size: .8rem;
-  text-align: start;
-}
-
-.list-view .company-card:hover{
-  transform: none;
-  box-shadow: 0 0 20px #333;
-}
 footer {
   background-color: var(--secondary-color);
   text-align: center;
@@ -553,7 +332,7 @@ footer p{
 .hero-image{
   position: relative;
   min-height: 50vh;
-  background-image: url("../images/leboucanier-mobile.webp");
+  background-image: url("../images/banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -668,28 +447,36 @@ form label {
 #membershipLevels{
   padding: 1rem;
 }
-.level-card{
+
+.level-card {
   text-align: center;
-  padding:.5rem;
+  padding: 0.5rem;
   margin: 1rem;
   background-color: #fac64f;
   border-radius: 5px 25px;
   max-height: 400px;
   transition: transform 0.3s ease-in-out;
   opacity: 0;
-  animation: cardAppear 0.03s forwards;
+  transform: translateY(20px) scale(0.95);
+  animation: cardFadeIn 0.6s ease-out forwards;
 }
+
 .level-card:nth-child(2) { animation-delay: 0.2s; }
 .level-card:nth-child(3) { animation-delay: 0.4s; }
 .level-card:nth-child(4) { animation-delay: 0.6s; }
 .level-card:nth-child(5) { animation-delay: 0.8s; }
 
-@keyframes cardAppear {
+@keyframes cardFadeIn {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
+
+
+
+
+
 
 .level-card h3{
   font-weight: 400;
@@ -745,67 +532,117 @@ margin: 0 2rem;
     background: #00336674;
   }
 
-/* Thank you page*/
+/* Confirmation Page*/
 #confirmation{
   padding: 1rem;
   margin: 1rem;
   justify-self: center;
   align-self: center;
-  border: solid 2px var(--primary-color);
+  border: solid 2px var(--secondary-color);
+  background-color:lightgreen;
 
   
 }
 #confirmation h2{
 color:var(--primary-color);
-border-bottom: 2.5px solid var(--accent-color);
+border-bottom: 2.5px solid var(--contrast-color);
 margin-bottom: 1rem;
-color: var(--primary-color)
+color: var(--secondary-color)
 }
 #confirmation p{
   font-size: 1rem;
   padding: .5rem;
   margin: .2rem;
-  color:var(--primary-color);
+  color:var(--secondary-color);
 }
 
 
-/* Discover Page*/
-@media screen and (max-width: 640px) {
-  #placesConainer{
-    display: grid;
-    grid-template-areas: 
-    "card1"
-    "card2" 
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8";
-  }
-#placesConainer div{
-    display: grid;
-    padding: 1rem;
-    margin: 1rem;
-    grid-template-areas:
-    "place"
-    "image"
-    "address"
-    "description"
-    "link";
-    
-  }
-  .places-card img {
-    width: 100%;
-  }
-  .places-card h3 {
-    font-size: 1.2rem;
-    padding: 5rem;
-  }
-  .places-card p {
-    font-size: 1rem;
-  }
+
+
+
+
+
+
+.nutrition-container div{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "image"
+  "p"
+  ;
+  place-items: center;
+  margin: 1rem 0;
+  padding:  1em;
+  box-shadow: 0 0 10px 0 #333;
+  transition: all 0.5s ease-out;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  overflow: visible;
+  transform-origin: center;
 }
+
+.nutrition-container div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #333;
+
+}
+.nutrition-container div h2 {
+  color: var(--secondary-color);
+  margin-bottom: 7px;
+  margin: 1rem;
+  padding:.5rem;
+  border-left: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  border-radius: 15%;
+
+} 
+
+
+
+
+.nutrition-container div img {
+  grid-area: image;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  box-shadow: 0 0 5px var(--secondary-color);
   
+ 
+}
+
+.nutrition-container div p{
+    grid-area: p;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: .5rem;
+    text-align:left;
+}
+
+
+@media (min-width: 641px){
+  .nutrition-container div {
+    grid-template-areas:
+      "image header"
+      "image p"
+      ;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
