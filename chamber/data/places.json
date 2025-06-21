@@ -4,55 +4,55 @@
     "image": "images/citadelle.webp",
     "address": "Milot, Nord Department, Haiti",
     "description": "A massive 19th-century fortress built on a mountain, symbolizing Haiti's independence.",
-    "url": "#"
+    "url": "https://www.citadellelaferriere.com/"
   },
   {
     "name": "Bassin Bleu",
     "image": "images/bassin-bleu.webp",
     "address": "Jacmel, Sud-Est Department, Haiti",
     "description": "A series of stunning turquoise waterfalls and natural pools hidden in the mountains near Jacmel.",
-    "url": "#"
+    "url": "https://en.haitiwonderland.com/haiti/en/nature/bassin-bleu-in-jacmel-the-ultimate-natural-retreat-in-southeast-haiti/49"
   },
   {
     "name": "Saut-d’Eau Waterfall",
     "image": "images/saut-deau.webp",
     "address": "Centre Department, Haiti",
     "description": "A sacred waterfall and pilgrimage site known for its spiritual significance and natural beauty.",
-    "url": "#"
+    "url": "https://en.wikipedia.org/wiki/Saut-d%27Eau"
   },
   {
     "name": "Labadee",
     "image": "images/labadee.webp",
     "address": "Northern Coast, near Cap-Haïtien, Haiti",
     "description": "A private beach resort area known for its beautiful coastline and cruise ship port.",
-    "url": "#"
+    "url": "https://www.royalcaribbean.com/cruise-to/labadee-haiti"
   },
   {
     "name": "Sans-Souci Palace",
     "image": "images/sans-souci.webp",
     "address": "Milot, Nord Department, Haiti",
     "description": "The ruins of a once grand royal palace of King Henri Christophe, near the Citadelle.",
-    "url": "#"
+    "url": "https://en.haitiwonderland.com/haiti-destination/en/touristic-place/haiti--palais-sans-souci/20"
   },
   {
     "name": "Île-à-Vache",
     "image": "images/ile-a-vache.webp",
     "address": "Off the coast of Les Cayes, Sud Department, Haiti",
     "description": "A serene island with white sand beaches, coral reefs, and peaceful resorts.",
-    "url": "#"
+    "url": "https://en.haitiwonderland.com/haiti-destination/en/touristic-place/haiti--ile-a-vache/16"
   },
   {
     "name": "Jacmel Historic District",
     "image": "images/jacmel.webp",
     "address": "Jacmel, Sud-Est Department, Haiti",
     "description": "A colorful coastal town known for its colonial architecture, art, and vibrant Carnival.",
-    "url": "#"
+    "url": "https://en.wikipedia.org/wiki/Jacmel"
   },
   {
     "name": "Gelee Beach",
     "image": "images/gelee-beach.webp",
     "address": "Les Cayes, Sud Department, Haiti",
     "description": "One of the longest and most popular beaches in Haiti, perfect for relaxing and enjoying seafood.",
-    "url": "#"
+    "url": "https://en.haitiwonderland.com/haiti-destination/en/touristic-place/haiti--gelee/7"
   }
 ]
